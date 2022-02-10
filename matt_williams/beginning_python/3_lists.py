@@ -16,7 +16,15 @@ my_element = my_list[1]
 #my_element = my_list[ : ]
 
 
-print(my_element)
-print(my_list[-1])
+#print(my_element)
+#print(my_list[-1])
 
+#my_list.append('rat')
+#my_list[1] = 'rat'
+#alt
+#my_list.insert(1, 'rat')
+
+
+
+print(my_list)
 
