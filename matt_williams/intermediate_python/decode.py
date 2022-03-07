@@ -1,3 +1,11 @@
+#import morse
+
+message = "... . -.-. .-. . - / -- . ... ... .- --. ."
+
+#decoded_message = morse.decode(message)
+
+#print(decoded_message)
+
 letter_to_morse = {
     'a':'.-', 'b':'-...', 'c':'-.-.', 'd':'-..', 'e':'.', 'f':'..-.', 
     'g':'--.', 'h':'....', 'i':'..', 'j':'.---', 'k':'-.-', 'l':'.-..', 'm':'--', 
@@ -15,19 +23,6 @@ for letter in letter_to_morse:
     morse_to_letter[morse] = letter
 
 
-def encode(message):
-    morse = []
-
-    for letter in message:
-        letter = letter.lower()
-        morse.append(letter_to_morse[letter])
-
-    # We need to join together Morse code letters with spaces
-    morse_message = " ".join(morse)
-    
-    return morse_message
-
-
 def decode(message):
     english = []
 
@@ -36,9 +31,13 @@ def decode(message):
     morse_letters = message.split(" ")
 
     for letter in morse_letters:
+       # english_letter = morse_to_letter[letter]
         english.append(morse_to_letter[letter])
 
     # Rejoin, but now we don't need to add any spaces
     english_message = "".join(english)
-    
     return english_message
+    
+english_message = decode(message)
+   
+print(english_message)
