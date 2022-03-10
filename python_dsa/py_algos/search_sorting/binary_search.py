@@ -1,6 +1,6 @@
 # BINARY SEARCH (Team Teehouse and freeCodeCamp)
 
-# Steps
+# Steps O(log )
 
 # We determine the middle pos of the sorted list
 # We compare the element in middle pos to the target element
@@ -20,7 +20,7 @@ my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 def binary_search(list):
 	#set the mid, high, and low points
 	low = 0
-	high = len(list, t)
+	high = len(list)
 	mid = (low + high)/2
 	#checking variables
 	print(low)
@@ -28,8 +28,11 @@ def binary_search(list):
 	print(high)
 	
 	#initiate loop to start search
-	for t in len(list):
-	if()
+	#for t in len(list):
+	#	if()
 		
 		
 binary_search(my_list)
+
+
+

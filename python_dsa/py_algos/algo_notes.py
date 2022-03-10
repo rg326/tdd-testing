@@ -20,4 +20,7 @@
 
 # N = number of values in a worst case scenario
 # Number of tries before reaching solution = Total Runtime
-# Big O - Order of Growth - A notation used to describe complexity (of the upper bounds). (Order of magnitude of complexity)
+# Big O - Order of Growth - A notation used to describe complexity (of the upper bounds, or worst case scenario). (Order of magnitude of complexity)
+# Big O is also a function of the size
+# Complexity of one search algo is relative to other search algorithms
+
