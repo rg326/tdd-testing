@@ -12,3 +12,24 @@
 
 # GUIDELINES
 # - List must be sorted
+
+
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#t = 7
+
+def binary_search(list):
+	#set the mid, high, and low points
+	low = 0
+	high = len(list, t)
+	mid = (low + high)/2
+	#checking variables
+	print(low)
+	print(mid)
+	print(high)
+	
+	#initiate loop to start search
+	for t in len(list):
+	if()
+		
+		
+binary_search(my_list)
