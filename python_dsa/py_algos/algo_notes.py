@@ -24,3 +24,16 @@
 # Big O is also a function of the size
 # Complexity of one search algo is relative to other search algorithms
 
+# =====
+
+# All Polynomial runtimes - for a given val of n its worst case run time is O(n^k)
+# Anything bounded by this, or that fall below O(n2) are considered efficient algorithms
+# In exponential runtimes, if n increases slightly, the runtime increases exponentially and are far too expensive to be used O(x^n)
+# Brute force algorithms have exponential runtimes
+# 3 locks problem
+# 10^2 -> 10^3 -> 10^4 2 digits to solve, to 3, to 4 = 1000 tries
+# Traveling Salesman Problem n! n(n-1)(n-2)
+# 3 routes = n combos -> 4 routes = n combos -> 5 routes = n combos
+# 4! 4*3*2*1 = 24
+# 200! 
+
