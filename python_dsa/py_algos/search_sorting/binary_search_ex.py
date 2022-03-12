@@ -35,6 +35,9 @@ verify(result)
 result = binary_search(numbers, 5)
 verify(result)
 
+'''
+Note: fix 'Target not found error'
+'''
 
 
 
