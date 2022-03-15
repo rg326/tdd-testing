@@ -49,6 +49,7 @@ print(sal_100k)
 
 # Challenge
 
+'''
 reader = csv.reader(infile)
 treeOrders = {}
 for row in reader: 
@@ -71,3 +72,4 @@ treeOrders10 - {k:v for k,v in treeOrders.items() if v > 10}
 
 print(treeOrders10)
 print('length of dictionary',lens(treeOrders10))
+'''
