@@ -48,3 +48,5 @@
 # When is a Linked List suitable:
 	# Insert items 'in-between' other items
 	# Collection size is unknown
+# Linked lists are recursive DSs:
+	# they're either empty or consists of/is a node that contains data and a pointer to a linked list
