@@ -19,3 +19,5 @@ def quicksort(list):
 	
 '''test case'''	
 print(quicksort([1,2,3,6,5,9,4,6,8,0,2]))
+
+#Complexity: O(n^2) worst case, usually O(nlogn) 
