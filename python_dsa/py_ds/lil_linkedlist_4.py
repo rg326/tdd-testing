@@ -85,7 +85,29 @@ class SLL:
 				
 		
 	def remove(self, data):
-		pass
+		'''Removes the first occurence of a node that contains the data argument as its self.data variable. Returns nothing.
+		
+		Time complexity: O(n) bc in the worst case, the node we want to remove is the last so we'd have to visit every node.'''
+		if self.head == None:
+			return 'Linked list is empty. No nodes to remove.'
+		
+		current = self.head
+		previous = None
+		found = False
+		while not found:
+			if current.get_data() == data:
+				found = True
+			else:
+				if current.get_next() == None:
+					return 'A node with that data value is not present.'
+				else:
+					previous = current
+					current = current.get_next()
+		if previous is None:
+			self.head = current.get_next()
+		else:
+			previous.set_next(current.get_next())
+			
 		
 '''Test cases'''
 '''
@@ -109,7 +131,7 @@ sll.add_front(2)
 sll.add_front(3)
 print(sll.size)
 '''
-
+'''
 sll = SLL()
 print(sll.search(3))
 sll.add_front(1)
@@ -117,3 +139,20 @@ sll.add_front(2)
 sll.add_front(3)
 print(sll.search('bird'))
 print(sll.search(2))
+'''
+
+'''
+sll = SLL()
+print(sll.remove(15))
+sll.add_front(27)
+print(sll.remove(15))
+print(sll.remove(27))
+print(sll.head)
+sll.add_front('apple')
+sll.add_front('berry')
+sll.add_front('cherry')
+sll.remove('berry')
+print(sll.head)
+print(sll.head.next)
+'''
+
