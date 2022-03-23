@@ -119,6 +119,7 @@ class DLL:
 			current.next.set_previous(current.get_previous())
 		
 	'''Test cases'''
+'''
 dll = DLL()
 print(dll.size)
 dll.add_front(1)
@@ -132,3 +133,15 @@ print(dll.size)
 print(dll.head.previous)
 print(dll.head.next)
 print(dll.head.next.next)
+'''
+dll = DLL()
+dll.remove('bird')
+dll.add_front(5)
+dll.add_front('apple')
+dll.remove(3)
+dll.add_front('carrot')
+dll.remove('apple')
+dll.size()
+
+dll.headdll.remove('carrot')
+dll.head
