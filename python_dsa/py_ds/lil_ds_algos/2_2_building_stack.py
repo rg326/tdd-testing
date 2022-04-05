@@ -41,6 +41,11 @@ if __name__ == '__main__':
 	print(s)
 	print(s.isEmpty())
 	s.push(3)
-	
-		
-		
+	print(s)
+	s.push(7)
+	s.push(5)
+	print(s)
+	print(s.pop())
+	print(s)
+	print(s.peek())	
+	print(s.size())
