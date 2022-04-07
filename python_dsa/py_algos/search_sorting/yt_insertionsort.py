@@ -11,3 +11,5 @@ def insertion_sort(list):
 			i -= 1
 			
 	return list
+	
+print(insertion_sort([5,2,7,3,9,5,4,7,5]))
