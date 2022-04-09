@@ -24,3 +24,14 @@ class BTree:
 					self.right = TreeNode(data)
 				else:
 					self.right.insert(data)
+					
+root = BTree('g')
+root.insert('c')
+root.insert('b')
+root.insert('a')
+root.insert('e')
+root.insert('d')
+root.insert('f')
+root.insert('i')
+root.insert('h')
+root.insert('k')
