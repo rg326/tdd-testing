@@ -13,11 +13,10 @@ def h_index(list):
 
 print(h_index([2,7,4,8]))
 
+print(h_index([1,7,6,5,6,]))
 
 
-def addition(num_a, num_b):
-	print(num_a + num_b)
+#def addition(num_a, num_b):
+#	print(num_a + num_b)
 	
-	
-addition(3, 5)
-		
+# addition(3, 5)
