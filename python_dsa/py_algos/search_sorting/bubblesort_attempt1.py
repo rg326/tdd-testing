@@ -13,4 +13,6 @@ def bubblesort(list):
 		
 		
 print(bubblesort([7,3,6,3,4,6,5,6]))
-		
+
+def bubblesort2(list):
+		pass
