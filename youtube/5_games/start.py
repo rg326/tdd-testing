@@ -1,3 +1,5 @@
+from gtn import guess_the_num
+
 while True:
 	txt = """Mini Games!!!
 		- Guess The Number (1)
@@ -10,7 +12,8 @@ while True:
 	val = input(txt)
 	
 	if val == '1':
-		pass
+		guess_the_num(input)
+		
 	elif val == '2':
 		pass
 	elif val == '3':
