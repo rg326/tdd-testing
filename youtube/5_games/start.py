@@ -1,4 +1,5 @@
 from gtn import guess_the_num
+from rps import rps
 
 while True:
 	txt = """Mini Games!!!
@@ -13,9 +14,8 @@ while True:
 	
 	if val == '1':
 		guess_the_num(input)
-		
 	elif val == '2':
-		pass
+		rps()
 	elif val == '3':
 		pass
 	elif val == '4':
