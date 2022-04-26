@@ -35,6 +35,7 @@ class Wordle:
 				user_guess = input("Not valid. Please enter a 5 letter word.")
 				
 			user_guess = user_guess.lower()
+			for i, char in enumerate(user_guess): #gives both index+val
 			
 		def play(self): #game loop
 			while True:
