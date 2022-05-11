@@ -8,6 +8,9 @@
 
 # The game continues until the deck is empty. The person with the least amount of cards left is the winner.
 
+# Build Notes
+# Attempt to store deck using a dictionary instead or an array, in order to assign specific values to each type of card
+
 import random
 
 def triple_threat():
@@ -16,7 +19,7 @@ def triple_threat():
 	computer = random.sample(card_deck, 3)
 	
 		
-	
+
 	
 			
 					
