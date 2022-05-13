@@ -11,11 +11,16 @@
 # Build Notes
 # Attempt to store deck using a dictionary instead or an array, in order to assign specific values to each type of card
 # Added test code to work with alt solution
+# Might go with array and use a switch statement to assign value instead
+
+import random
 
 
 def triple_threat():
 	card_deck = {
-		
+		1: {
+			
+		}
 		
 	}
 	
