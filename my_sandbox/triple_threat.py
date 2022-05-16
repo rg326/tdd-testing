@@ -76,8 +76,14 @@ def triple_threat():
 	
 	
 	
-	#my_turn = random.sample(card_deck, 3)
-	#computer = random.sample(card_deck, 3)
+	my_turn = random.choice(list(card_deck))
+	computer = random.choice(list(card_deck))
+	
+	#print(my_turn)
+	#print(computer)
+	
+	for x,y in card_deck:
+		print(card_deck[x])
 	
 	
 	
@@ -90,9 +96,9 @@ card_signs =['Heart','CLUB','DIAMOND','SPADE']
 random_point = random.choice(card_points)
 random_sign = random.choice(card_signs)
 random_card = random_point,random_sign
-print(random_card) '''
+print(random_card)
 
-'''def triple_threat():
+	def triple_threat():
 	card_deck = ['1h','1d','1s','1c','2h','2d','2s','2c','3h','3d','3s','3c','4h','4d','4s','4c','5h','5d','5s','5c','6h','6d','6s','6c','7h','7d','7s','7c','8h','8d','8s','8c','9h','9d','9s','9c','10h','10d','10s','10c','Jh','Jd','Js','Jc','Qh','Qd','Qs','Qc','Kh','Kd','Ks','Kc','Jo1','Jo2']
 	my_turn = random.sample(card_deck, 3)
 	computer = random.sample(card_deck, 3)
