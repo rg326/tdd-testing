@@ -103,12 +103,7 @@ print(random_card)
 	my_turn = random.sample(card_deck, 3)
 	computer = random.sample(card_deck, 3)
 	
-		
-
-	
-			
 					
-									
 triple_threat()'''
 
 
