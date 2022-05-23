@@ -76,14 +76,14 @@ def triple_threat():
 	
 	
 	
-	my_turn = random.choice(list(card_deck))
-	computer = random.choice(list(card_deck))
+	my_turn = random.choice(list(card_deck.values()))
+	computer = random.choice(list(card_deck.values()))
 	
-	#print(my_turn)
-	#print(computer)
+	print(my_turn)
+	print(computer)
 	
-	for x,y in card_deck:
-		print(y)
+	#for x in card_deck:
+	#	print(y)
 	
 	
 	
