@@ -16,78 +16,92 @@
 import random
 
 
-def triple_threat():
-	card_deck = {
-		'1 of Hearts': 1,
-		'1 of Diamonds': 1,
-		'1 of Clubs': 1,
-		'1 of Spades': 1,
-		'2 of Hearts': 2,
-		'2 of Diamonds': 2,
-		'2 of Clubs': 2,
-		'2 of Spades': 2,
-		'3 of Hearts': 3,
-		'3 of Diamonds': 3,
-		'3 of Clubs': 3,
-		'3 of Spades': 3,
-		'4 of Hearts': 4,
-		'4 of Diamonds': 4,
-		'4 of Clubs': 4,
-		'4 of Spades': 4,
-		'5 of Hearts': 5,
-		'5 of Diamonds': 5,
-		'5 of Clubs': 5,
-		'5 of Spades': 5,
-		'6 of Hearts': 6,
-		'6 of Diamonds': 6,
-		'6 of Clubs': 6,
-		'6 of Spades': 6,
-		'7 of Hearts': 7,
-		'7 of Diamonds': 7,
-		'7 of Clubs': 7,
-		'7 of Spades': 7,
-		'8 of Hearts': 8,
-		'8 of Diamonds': 8,
-		'8 of Clubs': 8,
-		'8 of Spades': 8,
-		'9 of Hearts': 9,
-		'9 of Diamonds': 9,
-		'9 of Clubs': 9,
-		'9 of Spades': 9,
-		'10 of Hearts': 10,
-		'10 of Diamonds': 10,
-		'10 of Clubs': 10,
-		'10 of Spades': 10,
-		'Jack of Hearts': 3,
-		'Jack of Diamonds': 3,
-		'Jack of Clubs': 3,
-		'Jack of Spades': 3,
-		'Queen of Hearts': 3,
-		'Queen of Diamonds': 3,
-		'Queen of Clubs': 3,
-		'Queen of Spades': 3,
-		'King of Hearts': 3,
-		'King of Diamonds': 3,
-		'King of Clubs': 3,
-		'King of Spades': 3,
-		'Joker A': 10,
-		'Joker B': 10
-	}
+
+card_deck = {
+	'1 of Hearts': 1,
+	'1 of Diamonds': 1,
+	'1 of Clubs': 1,
+	'1 of Spades': 1,
+	'2 of Hearts': 2,
+	'2 of Diamonds': 2,
+	'2 of Clubs': 2,
+	'2 of Spades': 2,
+	'3 of Hearts': 3,
+	'3 of Diamonds': 3,
+	'3 of Clubs': 3,
+	'3 of Spades': 3,
+	'4 of Hearts': 4,
+	'4 of Diamonds': 4,
+	'4 of Clubs': 4,
+	'4 of Spades': 4,
+	'5 of Hearts': 5,
+	'5 of Diamonds': 5,
+	'5 of Clubs': 5,
+	'5 of Spades': 5,
+	'6 of Hearts': 6,
+	'6 of Diamonds': 6,
+	'6 of Clubs': 6,
+	'6 of Spades': 6,
+	'7 of Hearts': 7,
+	'7 of Diamonds': 7,
+	'7 of Clubs': 7,
+	'7 of Spades': 7,
+	'8 of Hearts': 8,
+	'8 of Diamonds': 8,
+	'8 of Clubs': 8,
+	'8 of Spades': 8,
+	'9 of Hearts': 9,
+	'9 of Diamonds': 9,
+	'9 of Clubs': 9,
+	'9 of Spades': 9,
+	'10 of Hearts': 10,
+	'10 of Diamonds': 10,
+	'10 of Clubs': 10,
+	'10 of Spades': 10,
+	'Jack of Hearts': 3,
+	'Jack of Diamonds': 3,
+	'Jack of Clubs': 3,
+	'Jack of Spades': 3,
+	'Queen of Hearts': 3,
+	'Queen of Diamonds': 3,
+	'Queen of Clubs': 3,
+	'Queen of Spades': 3,
+	'King of Hearts': 3,
+	'King of Diamonds': 3,
+	'King of Clubs': 3,
+	'King of Spades': 3,
+	'Joker A': 10,
+	'Joker B': 10
+}
+
+my_score = 0
+comp_score = 0
+
+
+my_turn_1 = random.choice(list(card_deck))
+my_turn_2 = random.choice(list(card_deck))
+my_turn_3 = random.choice(list(card_deck))
+comp_turn_1 = random.choice(list(card_deck))
+comp_turn_2 = random.choice(list(card_deck))
+comp_turn_3 = random.choice(list(card_deck))
+
+def play_turn():
+	print(my_turn_1)
+	print(my_turn_2)
+	print(my_turn_3)
+
+	print("It's the computer's turn!")
+	print(comp_turn_1)
+	print(comp_turn_2)
+	print(comp_turn_3)
 	
 	
-	
-	my_turn = random.choice(list(card_deck.values()))
-	computer = random.choice(list(card_deck.values()))
-	
-	print(my_turn)
-	print(computer)
-	
-	#for x in card_deck:
-	#	print(y)
-	
-	
-	
-triple_threat()
+
+play_turn()
+
+
+#for x in card_deck:
+#	print(y)
 
 
 ''' import random
