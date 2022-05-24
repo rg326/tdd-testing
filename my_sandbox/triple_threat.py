@@ -103,6 +103,14 @@ play_turn()
 #for x in card_deck:
 #	print(y)
 
+def start_game():
+	print('Hello there! Welcome to Triple Threat! Would you like to play a round?')
+	input = 'Press Y/y to play, and N/n to get out of here!'
+	if input == Y or y:
+		play_turn()
+	else:
+		return None
+
 
 ''' import random
 card_points =['A','K','Q','J','2','3','4','5','6','7','8','9','10']
