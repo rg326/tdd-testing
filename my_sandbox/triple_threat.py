@@ -103,18 +103,21 @@ comp_turn_2 = random.sample(list(hand), 1)
 comp_turn_3 = random.sample(list(hand), 1)"""
 
 my_turn = random.sample(list(hand), 3)
-
 comp_turn = random.sample(list(hand), 3)
 
 
 def play_turn():
 	print(my_turn)
+	for x in my_turn:
+		print(card_deck[x])
 	#print(my_turn_2)
 	#print(my_turn_3)
 	
 	print("It's the computer's turn!")
 	time.sleep(2)
 	print(comp_turn)
+	for x in my_turn:
+		print(card_deck[x])
 	#print(comp_turn_2)
 	#print(comp_turn_3)
 	
@@ -153,5 +156,4 @@ print(random_card)
 	
 					
 triple_threat()'''
-
 
