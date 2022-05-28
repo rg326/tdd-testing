@@ -96,7 +96,9 @@ def play_turn():
 	print(comp_turn_2)
 	print(comp_turn_3)
 	
-
+# Find a way to take the string of the dict and compare its value to an
+# action
+# Use a conditional for each key in dict
 
 
 #for x in card_deck:
