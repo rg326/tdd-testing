@@ -78,23 +78,45 @@ my_score = 0
 comp_score = 0
 
 
-my_turn_1 = random.choice(list(card_deck))
+"""my_turn_1 = random.choice(list(card_deck))
 my_turn_2 = random.choice(list(card_deck))
 my_turn_3 = random.choice(list(card_deck))
 comp_turn_1 = random.choice(list(card_deck))
 comp_turn_2 = random.choice(list(card_deck))
-comp_turn_3 = random.choice(list(card_deck))
+comp_turn_3 = random.choice(list(card_deck))"""
+
+"""my_turn_1 = random.sample(card_deck.items(), 1)
+my_turn_2 = random.sample(card_deck.items(), 1)
+my_turn_3 = random.sample(card_deck.items(), 1)
+comp_turn_1 = random.sample(card_deck.items(), 1)
+comp_turn_2 = random.sample(card_deck.items(), 1)
+comp_turn_3 = random.sample(card_deck.items(), 1)"""
+
+hand = card_deck.keys()
+
+"""my_turn_1 = random.sample(list(hand), 1)
+my_turn_2 = random.sample(list(hand), 1)
+my_turn_3 = random.sample(list(hand), 1)
+
+comp_turn_1 = random.sample(list(hand), 1)
+comp_turn_2 = random.sample(list(hand), 1)
+comp_turn_3 = random.sample(list(hand), 1)"""
+
+my_turn = random.sample(list(hand), 3)
+
+comp_turn = random.sample(list(hand), 3)
+
 
 def play_turn():
-	print(my_turn_1)
-	print(my_turn_2)
-	print(my_turn_3)
+	print(my_turn)
+	#print(my_turn_2)
+	#print(my_turn_3)
 	
 	print("It's the computer's turn!")
 	time.sleep(2)
-	print(comp_turn_1)
-	print(comp_turn_2)
-	print(comp_turn_3)
+	print(comp_turn)
+	#print(comp_turn_2)
+	#print(comp_turn_3)
 	
 # Find a way to take the string of the dict and compare its value to an
 # action
