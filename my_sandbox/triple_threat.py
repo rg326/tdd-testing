@@ -14,7 +14,7 @@
 # Might go with array and use a switch statement to assign value instead
 
 import random
-
+import time
 
 
 card_deck = {
@@ -89,8 +89,9 @@ def play_turn():
 	print(my_turn_1)
 	print(my_turn_2)
 	print(my_turn_3)
-
+	
 	print("It's the computer's turn!")
+	time.sleep(2)
 	print(comp_turn_1)
 	print(comp_turn_2)
 	print(comp_turn_3)
@@ -105,10 +106,11 @@ def start_game():
 	print('Hello there! Welcome to Triple Threat! Would you like to play a round?')
 	print('Press Y/y to play, and N/n to get out of here!')
 	player_input = input()
-	if player_input is not "Y" or "y":
+	
+	if player_input is "Y" or "y":
 		play_turn()
 	else:
-		return None
+		return False
 
 start_game()
 
