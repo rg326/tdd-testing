@@ -107,19 +107,32 @@ comp_turn = random.sample(list(hand), 3)
 
 
 def play_turn():
+	my_hand = 0
+	comp_hand = 0
 	print(my_turn)
 	for x in my_turn:
 		print(card_deck[x])
+		my_hand += card_deck[x]
 	#print(my_turn_2)
 	#print(my_turn_3)
 	
 	print("It's the computer's turn!")
 	time.sleep(2)
 	print(comp_turn)
-	for x in my_turn:
+	for x in comp_turn:
 		print(card_deck[x])
+		comp_hand += card_deck[x] 
 	#print(comp_turn_2)
 	#print(comp_turn_3)
+	if my_hand > comp_hand:
+		print("You win this round! Please discard your hand.")
+	elif comp_hand > my_hand:
+		print("You've lost this round. Please hold on to your current cards.")
+	else:
+		print("It's a draw! Please play another turn!'")
+		play_turn()
+	
+	
 	
 # Find a way to take the string of the dict and compare its value to an
 # action
