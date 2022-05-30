@@ -74,8 +74,11 @@ card_deck = {
 	'Joker B': 10
 }
 
+my_deck = {}
+comp_deck = {}
 my_score = 0
 comp_score = 0
+
 
 
 """my_turn_1 = random.choice(list(card_deck))
@@ -135,8 +138,11 @@ def play_turn():
 	
 	
 # Find a way to take the string of the dict and compare its value to an
-# action
-# Use a conditional for each key in dict
+# action (Done)
+# Use a conditional for each key in dict (not needed)
+
+# Next steps:
+# Discard the cards pulled by the winner of each round (delete from deck, and store the cards pulled by the loser in its own deck.
 
 
 #for x in card_deck:
