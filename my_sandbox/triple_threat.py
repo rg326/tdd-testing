@@ -74,10 +74,7 @@ card_deck = {
 	'Joker B': 10
 }
 
-my_deck = {}
-comp_deck = {}
-my_score = 0
-comp_score = 0
+
 
 
 
@@ -105,11 +102,16 @@ comp_turn_1 = random.sample(list(hand), 1)
 comp_turn_2 = random.sample(list(hand), 1)
 comp_turn_3 = random.sample(list(hand), 1)"""
 
+#Variables
+my_deck = {}
+comp_deck = {}
 my_turn = random.sample(list(hand), 3)
 comp_turn = random.sample(list(hand), 3)
 
 
 def play_turn():
+	my_score = 0
+	comp_score = 0
 	my_hand = 0
 	comp_hand = 0
 	print(my_turn)
@@ -129,8 +131,14 @@ def play_turn():
 	#print(comp_turn_3)
 	if my_hand > comp_hand:
 		print("You win this round! Please discard your hand.")
+		my_score += 1
+		print(f"Your current score is {my_score}.")
+		
 	elif comp_hand > my_hand:
 		print("You've lost this round. Please hold on to your current cards.")
+		comp_score += 1
+		print(f"The computer's current score is {comp_score}.")
+		
 	else:
 		print("It's a draw! Please play another turn!'")
 		play_turn()
