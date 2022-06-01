@@ -142,6 +142,36 @@ def play_turn():
 	else:
 		print("It's a draw! Please play another turn!'")
 		play_turn()
+		
+def cont_turn():
+	print(my_turn)
+	for x in my_turn:
+		print(card_deck[x])
+		my_hand += card_deck[x]
+	#print(my_turn_2)
+	#print(my_turn_3)
+	
+	print("It's the computer's turn!")
+	time.sleep(2)
+	print(comp_turn)
+	for x in comp_turn:
+		print(card_deck[x])
+		comp_hand += card_deck[x] 
+	#print(comp_turn_2)
+	#print(comp_turn_3)
+	if my_hand > comp_hand:
+		print("You win this round! Please discard your hand.")
+		my_score += 1
+		print(f"Your current score is {my_score}.")
+		
+	elif comp_hand > my_hand:
+		print("You've lost this round. Please hold on to your current cards.")
+		comp_score += 1
+		print(f"The computer's current score is {comp_score}.")
+		
+	else:
+		print("It's a draw! Please play another turn!'")
+		play_turn()
 	
 	
 	
@@ -157,14 +187,28 @@ def play_turn():
 #	print(y)
 
 def start_game():
-	print('Hello there! Welcome to Triple Threat! Would you like to play a round?')
-	print('Press Y/y to play, and N/n to get out of here!')
-	player_input = input()
+	while True:
+		print('Hello there! Welcome to Triple Threat! Would you like to play a round?')
+		print('Press Y/y to play, and N/n to get out of here!')
+		player_input = input()
+		
+		if player_input is "Y" or "y":
+			play_turn()
+		elif player_input is "N" or "n":
+			break
+		else:
+			break
+			
+		print('Good round! Would you like to continue?')
+		cont_game = input()
+		
+		if cont_game == "Y" or "y":
+			cont_turn()
+		elif cont_game == "N" or "n":
+			break
+		else:
+			break
 	
-	if player_input is "Y" or "y":
-		play_turn()
-	else:
-		return False
 
 start_game()
 
