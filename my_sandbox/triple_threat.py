@@ -108,12 +108,13 @@ comp_deck = {}
 my_turn = random.sample(list(hand), 3)
 comp_turn = random.sample(list(hand), 3)
 
+my_score = 0
+comp_score = 0
+my_hand = 0
+comp_hand = 0
 
 def play_turn():
-	my_score = 0
-	comp_score = 0
-	my_hand = 0
-	comp_hand = 0
+	
 	print(my_turn)
 	for x in my_turn:
 		print(card_deck[x])
@@ -182,6 +183,7 @@ def cont_turn():
 # Next steps:
 # Discard the cards pulled by the winner of each round (delete from deck, and store the cards pulled by the loser in its own deck.
 # Problem: Getting Python to recognize global variables, rather than scoping them to each function 
+# Conditional in start_game() still has bugs (else not working)
 
 
 #for x in card_deck:
@@ -195,18 +197,18 @@ def start_game():
 		
 		if player_input is "Y" or "y":
 			play_turn()
-		elif player_input is "N" or "n":
-			break
+		#elif player_input is "N" or "n":
+		#	break
 		else:
 			break
 			
 		print('Good round! Would you like to continue?')
 		cont_game = input()
 		
-		if cont_game == "Y" or "y":
+		if cont_game is not "Y" or "y":
 			cont_turn()
-		elif cont_game == "N" or "n":
-			break
+		#elif cont_game == "N" or "n":
+		#	break
 		else:
 			break
 	
