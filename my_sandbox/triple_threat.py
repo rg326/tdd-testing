@@ -181,6 +181,7 @@ def cont_turn():
 
 # Next steps:
 # Discard the cards pulled by the winner of each round (delete from deck, and store the cards pulled by the loser in its own deck.
+# Problem: Getting Python to recognize global variables, rather than scoping them to each function 
 
 
 #for x in card_deck:
