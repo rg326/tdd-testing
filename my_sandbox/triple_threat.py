@@ -115,11 +115,14 @@ comp_hand = 0
 
 
 def play_turn():
-	
+	global my_score
+	global comp_score
+	global my_hand
+	global comp_hand
+
 	print(my_turn)
 	for x in my_turn:
 		print(card_deck[x])
-		global my_hand
 		my_hand += card_deck[x]
 	#print(my_turn_2)
 	#print(my_turn_3)
@@ -129,19 +132,16 @@ def play_turn():
 	print(comp_turn)
 	for x in comp_turn:
 		print(card_deck[x])
-		global comp_hand
 		comp_hand += card_deck[x] 
 	#print(comp_turn_2)
 	#print(comp_turn_3)
 	if my_hand > comp_hand:
 		print("You win this round! Please discard your hand.")
-		global my_score
 		my_score += 1
-		print(f"Your current score is {my_score}.")
+		print(f"Your current score is {my_score}. The computer's score is {comp_score}.")
 		
 	elif comp_hand > my_hand:
 		print("You've lost this round. Please hold on to your current cards.")
-		global comp_score
 		comp_score += 1
 		print(f"The computer's current score is {comp_score}. Your score is {my_score}.")
 		
@@ -149,11 +149,18 @@ def play_turn():
 		print("It's a draw! Please play another turn! Your current score is {my_score}. The computer's score is {comp_score}.")
 		play_turn()
 		
+my_turn = random.sample(list(hand), 3)
+comp_turn = random.sample(list(hand), 3)
+		
 def cont_turn():
+	global my_score
+	global comp_score
+	global my_hand
+	global comp_hand
+	
 	print(my_turn)
 	for x in my_turn:
 		print(card_deck[x])
-		global my_hand
 		my_hand += card_deck[x]
 	#print(my_turn_2)
 	#print(my_turn_3)
@@ -163,19 +170,16 @@ def cont_turn():
 	print(comp_turn)
 	for x in comp_turn:
 		print(card_deck[x])
-		global comp_hand
 		comp_hand += card_deck[x] 
 	#print(comp_turn_2)
 	#print(comp_turn_3)
 	if my_hand > comp_hand:
 		print("You win this round! Please discard your hand.")
-		global my_score
 		my_score += 1
 		print(f"Your current score is {my_score}.")
 		
 	elif comp_hand > my_hand:
 		print("You've lost this round. Please hold on to your current cards.")
-		global comp_score
 		comp_score += 1
 		print(f"The computer's current score is {comp_score}.")
 		
