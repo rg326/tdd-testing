@@ -113,11 +113,13 @@ comp_score = 0
 my_hand = 0
 comp_hand = 0
 
+
 def play_turn():
 	
 	print(my_turn)
 	for x in my_turn:
 		print(card_deck[x])
+		global my_hand
 		my_hand += card_deck[x]
 	#print(my_turn_2)
 	#print(my_turn_3)
@@ -127,27 +129,31 @@ def play_turn():
 	print(comp_turn)
 	for x in comp_turn:
 		print(card_deck[x])
+		global comp_hand
 		comp_hand += card_deck[x] 
 	#print(comp_turn_2)
 	#print(comp_turn_3)
 	if my_hand > comp_hand:
 		print("You win this round! Please discard your hand.")
+		global my_score
 		my_score += 1
 		print(f"Your current score is {my_score}.")
 		
 	elif comp_hand > my_hand:
 		print("You've lost this round. Please hold on to your current cards.")
+		global comp_score
 		comp_score += 1
-		print(f"The computer's current score is {comp_score}.")
+		print(f"The computer's current score is {comp_score}. Your score is {my_score}.")
 		
 	else:
-		print("It's a draw! Please play another turn!'")
+		print("It's a draw! Please play another turn! Your current score is {my_score}. The computer's score is {comp_score}.")
 		play_turn()
 		
 def cont_turn():
 	print(my_turn)
 	for x in my_turn:
 		print(card_deck[x])
+		global my_hand
 		my_hand += card_deck[x]
 	#print(my_turn_2)
 	#print(my_turn_3)
@@ -157,16 +163,19 @@ def cont_turn():
 	print(comp_turn)
 	for x in comp_turn:
 		print(card_deck[x])
+		global comp_hand
 		comp_hand += card_deck[x] 
 	#print(comp_turn_2)
 	#print(comp_turn_3)
 	if my_hand > comp_hand:
 		print("You win this round! Please discard your hand.")
+		global my_score
 		my_score += 1
 		print(f"Your current score is {my_score}.")
 		
 	elif comp_hand > my_hand:
 		print("You've lost this round. Please hold on to your current cards.")
+		global comp_score
 		comp_score += 1
 		print(f"The computer's current score is {comp_score}.")
 		
@@ -184,6 +193,8 @@ def cont_turn():
 # Discard the cards pulled by the winner of each round (delete from deck, and store the cards pulled by the loser in its own deck.
 # Problem: Getting Python to recognize global variables, rather than scoping them to each function 
 # Conditional in start_game() still has bugs (else not working)
+# Might refactor entire code to javascript due to better handling of scoped variables
+# Fixed it! Remember to place global variables at the top of the function instead
 
 
 #for x in card_deck:
