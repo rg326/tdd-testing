@@ -208,22 +208,31 @@ def start_game():
 	while True:
 		print('Hello there! Welcome to Triple Threat! Would you like to play a round?')
 		print('Press Y/y to play, and N/n to get out of here!')
-		player_input = input()
+		play_game = input()
 		
-		if player_input is "Y" or "y":
+		if play_game is "Y" or "y":
 			play_turn()
 		#elif player_input is "N" or "n":
 		#	break
-		else:
+		elif play_game  == "N" or "n":
 			break
 			
 		print('Good round! Would you like to continue?')
 		cont_game = input()
 		
-		if cont_game is not "Y" or "y":
+		if cont_game is "Y" or "y":
 			cont_turn()
-		#elif cont_game == "N" or "n":
-		#	break
+		elif cont_game == "N" or "n":
+			break
+		elif card_deck is None:
+			if my_score > comp_score:
+				print(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You win! Care to play again?")
+			elif comp_score > my_score:
+				print(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You Lose. Care to play again?")
+			elif my_score == comp_score:
+				print(f"There are no more cards in the deck. Your final score is {my_score}. The computer's score is {comp_score}. It's a draw! Care to play again?")
+		elif cont_game == "N" or "n":
+			break
 		else:
 			break
 	
