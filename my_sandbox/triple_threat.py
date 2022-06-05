@@ -13,6 +13,20 @@
 # Added test code to work with alt solution
 # Might go with array and use a switch statement to assign value instead
 
+####
+
+# Find a way to take the string of the dict and compare its value to an
+# action (Done)
+# Use a conditional for each key in dict (not needed)
+
+# Next steps:
+# Discard the cards pulled by the winner of each round (delete from deck, and store the cards pulled by the loser in its own deck.
+# Problem: Getting Python to recognize global variables, rather than scoping them to each function 
+# Conditional in start_game() still has bugs (else not working)
+# Might refactor entire code to javascript due to better handling of scoped variables
+# Fixed it! Remember to place global variables at the top of the function instead
+# Will most likely still refactor to javascript. Each item in the card deck will be its own distinct object ie: {card.title, card.value, card.image}
+
 import random
 import time
 
@@ -73,9 +87,6 @@ card_deck = {
 	'Joker A': 10,
 	'Joker B': 10
 }
-
-
-
 
 
 """my_turn_1 = random.choice(list(card_deck))
@@ -157,6 +168,8 @@ def cont_turn():
 	global comp_score
 	global my_hand
 	global comp_hand
+	my_turn = random.sample(list(hand), 3)
+	comp_turn = random.sample(list(hand), 3)
 	
 	print(my_turn)
 	for x in my_turn:
@@ -189,16 +202,6 @@ def cont_turn():
 	
 	
 	
-# Find a way to take the string of the dict and compare its value to an
-# action (Done)
-# Use a conditional for each key in dict (not needed)
-
-# Next steps:
-# Discard the cards pulled by the winner of each round (delete from deck, and store the cards pulled by the loser in its own deck.
-# Problem: Getting Python to recognize global variables, rather than scoping them to each function 
-# Conditional in start_game() still has bugs (else not working)
-# Might refactor entire code to javascript due to better handling of scoped variables
-# Fixed it! Remember to place global variables at the top of the function instead
 
 
 #for x in card_deck:
