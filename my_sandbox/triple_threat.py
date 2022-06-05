@@ -148,11 +148,15 @@ def play_turn():
 	#print(comp_turn_3)
 	if my_hand > comp_hand:
 		print("You win this round! Please discard your hand.")
+		for x in my_turn:
+			del card_deck[x]
 		my_score += 1
 		print(f"Your current score is {my_score}. The computer's score is {comp_score}.")
 		
 	elif comp_hand > my_hand:
 		print("You've lost this round. Please hold on to your current cards.")
+		for x in comp_turn:
+			del card_deck[x]
 		comp_score += 1
 		print(f"The computer's current score is {comp_score}. Your score is {my_score}.")
 		
@@ -188,17 +192,21 @@ def cont_turn():
 	#print(comp_turn_3)
 	if my_hand > comp_hand:
 		print("You win this round! Please discard your hand.")
+		for x in my_turn:
+			del card_deck[x]
 		my_score += 1
 		print(f"Your current score is {my_score}.")
 		
 	elif comp_hand > my_hand:
 		print("You've lost this round. Please hold on to your current cards.")
+		for x in comp_turn:
+			del card_deck[x]
 		comp_score += 1
 		print(f"The computer's current score is {comp_score}.")
 		
 	else:
 		print("It's a draw! Please play another turn!'")
-		play_turn()
+		cont_turn()
 	
 	
 	
@@ -208,36 +216,35 @@ def cont_turn():
 #	print(y)
 
 def start_game():
-	while True:
 		print('Hello there! Welcome to Triple Threat! Would you like to play a round?')
 		print('Press Y/y to play, and N/n to get out of here!')
 		play_game = input()
-		
-		if play_game is "Y" or "y":
-			play_turn()
-		#elif player_input is "N" or "n":
-		#	break
-		elif play_game  == "N" or "n":
-			break
+		while True:
+			if play_game is "Y" or "y":
+				play_turn()
+			#elif player_input is "N" or "n":
+			#	break
+			elif play_game  == "N" or "n":
+				break
+				
+			print('Good round! Would you like to continue?')
+			cont_game = input()
 			
-		print('Good round! Would you like to continue?')
-		cont_game = input()
-		
-		if cont_game is "Y" or "y":
-			cont_turn()
-		elif cont_game == "N" or "n":
-			break
-		elif card_deck is None:
-			if my_score > comp_score:
-				print(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You win! Care to play again?")
-			elif comp_score > my_score:
-				print(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You Lose. Care to play again?")
-			elif my_score == comp_score:
-				print(f"There are no more cards in the deck. Your final score is {my_score}. The computer's score is {comp_score}. It's a draw! Care to play again?")
-		elif cont_game == "N" or "n":
-			break
-		else:
-			break
+			if cont_game is "Y" or "y":
+				cont_turn()
+			elif cont_game == "N" or "n":
+				break
+			elif card_deck is None:
+				if my_score > comp_score:
+					print(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You win! Care to play again?")
+				elif comp_score > my_score:
+					print(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You Lose. Care to play again?")
+				elif my_score == comp_score:
+					print(f"There are no more cards in the deck. Your final score is {my_score}. The computer's score is {comp_score}. It's a draw! Care to play again?")
+			elif cont_game == "N" or "n":
+				break
+			else:
+				break
 	
 
 start_game()
