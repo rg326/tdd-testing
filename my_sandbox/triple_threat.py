@@ -130,7 +130,22 @@ def play_turn():
 	global comp_score
 	global my_hand
 	global comp_hand
-
+	
+	if len(card_deck) == 0:
+		if my_score > comp_score:
+			print(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You win! Care to play again?")
+		elif comp_score > my_score:
+			print(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You Lose. Care to play again?")
+		elif my_score == comp_score:
+			print(f"There are no more cards in the deck. Your final score is {my_score}. The computer's score is {comp_score}. It's a draw! Care to play again?")
+	
+	
+	my_turn = random.sample(list(hand), 3)
+	comp_turn = random.sample(list(hand), 3)
+	
+	print(len(card_deck))
+	
+	print("It's your turn!'")
 	print(my_turn)
 	for x in my_turn:
 		print(card_deck[x])
@@ -139,13 +154,14 @@ def play_turn():
 	#print(my_turn_3)
 	
 	print("It's the computer's turn!")
-	time.sleep(2)
+	#time.sleep(2)
 	print(comp_turn)
 	for x in comp_turn:
 		print(card_deck[x])
 		comp_hand += card_deck[x] 
 	#print(comp_turn_2)
 	#print(comp_turn_3)
+	
 	if my_hand > comp_hand:
 		print("You win this round! Please discard your hand.")
 		for x in my_turn:
@@ -158,56 +174,11 @@ def play_turn():
 		for x in comp_turn:
 			del card_deck[x]
 		comp_score += 1
-		print(f"The computer's current score is {comp_score}. Your score is {my_score}.")
-		
+		print(f"The computer's current score is {comp_score}. Your score is {my_score}.")	
 	else:
 		print("It's a draw! Please play another turn! Your current score is {my_score}. The computer's score is {comp_score}.")
 		play_turn()
 		
-my_turn = random.sample(list(hand), 3)
-comp_turn = random.sample(list(hand), 3)
-		
-def cont_turn():
-	global my_score
-	global comp_score
-	global my_hand
-	global comp_hand
-	my_turn = random.sample(list(hand), 3)
-	comp_turn = random.sample(list(hand), 3)
-	
-	print(my_turn)
-	for x in my_turn:
-		print(card_deck[x])
-		my_hand += card_deck[x]
-	#print(my_turn_2)
-	#print(my_turn_3)
-	
-	print("It's the computer's turn!")
-	time.sleep(2)
-	print(comp_turn)
-	for x in comp_turn:
-		print(card_deck[x])
-		comp_hand += card_deck[x] 
-	#print(comp_turn_2)
-	#print(comp_turn_3)
-	if my_hand > comp_hand:
-		print("You win this round! Please discard your hand.")
-		for x in my_turn:
-			del card_deck[x]
-		my_score += 1
-		print(f"Your current score is {my_score}.")
-		
-	elif comp_hand > my_hand:
-		print("You've lost this round. Please hold on to your current cards.")
-		for x in comp_turn:
-			del card_deck[x]
-		comp_score += 1
-		print(f"The computer's current score is {comp_score}.")
-		
-	else:
-		print("It's a draw! Please play another turn!'")
-		cont_turn()
-	
 	
 	
 
@@ -230,18 +201,11 @@ def start_game():
 			print('Good round! Would you like to continue?')
 			cont_game = input()
 			
+			
+			
 			if cont_game is "Y" or "y":
-				cont_turn()
-			elif cont_game == "N" or "n":
-				break
-			elif card_deck is None:
-				if my_score > comp_score:
-					print(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You win! Care to play again?")
-				elif comp_score > my_score:
-					print(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You Lose. Care to play again?")
-				elif my_score == comp_score:
-					print(f"There are no more cards in the deck. Your final score is {my_score}. The computer's score is {comp_score}. It's a draw! Care to play again?")
-			elif cont_game == "N" or "n":
+				play_turn()
+			elif cont_game is not "N" or "n":
 				break
 			else:
 				break
