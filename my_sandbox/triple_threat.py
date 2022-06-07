@@ -188,27 +188,31 @@ def play_turn():
 
 def start_game():
 		print('Hello there! Welcome to Triple Threat! Would you like to play a round?')
-		print('Press Y/y to play, and N/n to get out of here!')
-		play_game = input()
-		while True:
-			if play_game is "Y" or "y":
-				play_turn()
+		#print('')
+		play_game = input('Press Y/y to play, and N/n to get out of here!\n')
+		is_gameloop = True
+		
+		while is_gameloop:
+			if play_game is "N" or "n":
+				is_gameloop = False
 			#elif player_input is "N" or "n":
 			#	break
-			elif play_game  == "N" or "n":
-				break
+			elif play_game is "Y" or "y":
+				play_turn()
+			else:
+				None
 				
 			print('Good round! Would you like to continue?')
 			cont_game = input()
-			
-			
-			
-			if cont_game is "Y" or "y":
+				
+				
+				
+			if cont_game is "N" or "n":
+				is_gameloop = False
+			elif cont_game is "Y" or "y":
 				play_turn()
-			elif cont_game is not "N" or "n":
-				break
 			else:
-				break
+				is_gameloop = False
 	
 
 start_game()
