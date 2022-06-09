@@ -32,10 +32,10 @@ import time
 
 
 card_deck = {
-	'1 of Hearts': 1,
-	'1 of Diamonds': 1,
-	'1 of Clubs': 1,
-	'1 of Spades': 1,
+	'A of Hearts': 1,
+	'A of Diamonds': 1,
+	'A of Clubs': 1,
+	'A of Spades': 1,
 	'2 of Hearts': 2,
 	'2 of Diamonds': 2,
 	'2 of Clubs': 2,
@@ -131,7 +131,8 @@ def play_turn():
 	global my_hand
 	global comp_hand
 	
-	if len(card_deck) == 0:
+	if len(card_deck) <= 1:
+		"""print(f"The game is over! Final score is: My score: {my_score}, Computer score: {comp_score}!")"""
 		if my_score > comp_score:
 			print(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You win! Care to play again?")
 		elif comp_score > my_score:
@@ -142,8 +143,8 @@ def play_turn():
 	
 	my_turn = random.sample(list(hand), 3)
 	comp_turn = random.sample(list(hand), 3)
-	
-	print(len(card_deck))
+	\
+	print(len(card_deck))\
 	
 	print("It's your turn!'")
 	print(my_turn)
