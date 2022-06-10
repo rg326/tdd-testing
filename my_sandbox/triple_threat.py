@@ -158,7 +158,7 @@ def play_turn():
 	#print(my_turn_3)
 	
 	print("It's the computer's turn!")
-	#time.sleep(2)
+	# time.sleep(2)
 	print(comp_turn)
 	for x in comp_turn:
 		print(card_deck[x])
@@ -174,13 +174,13 @@ def play_turn():
 		print(f"Your current score is {my_score}. The computer's score is {comp_score}.")
 		
 	elif comp_hand > my_hand:
-		print("You've lost this round. Please hold on to your current cards.")
+		print("You've lost this round. Please hold on to your current cards. Please press 'Y' or 'y' to continue.")
 		for x in comp_turn:
 			del card_deck[x]
 		comp_score += 1
-		print(f"The computer's current score is {comp_score}. Your score is {my_score}.")	
+		print(f"The computer's current score is {comp_score}. Your score is {my_score}. Please press 'Y' or 'y' to continue.")	
 	else:
-		print("It's a draw! Please play another turn! Your current score is {my_score}. The computer's score is {comp_score}.")
+		print("It's a draw! Please play another turn! Your current score is {my_score}. The computer's score is {comp_score}. Please press 'Y' or 'y' to continue.")
 		play_turn()
 		
 	
@@ -200,22 +200,25 @@ def start_game():
 			if play_game is "Y" or "y":
 				play_turn()
 			elif play_game is "N" or "n":
-				is_gameloop = False
+				break
 			#elif player_input is "N" or "n":
 			#	break
 			else:
-				None
+				break
 			
-			if card_deck == 0:	
-				print('Good round! Would you like to continue?')
+			#if card_deck is not 0:	
+			#	print('Good round! Would you like to continue?')
+			#elif card_deck == None:
+			#	break
+				#print('Great game! Want to go again?')
 			cont_game = input()	
 			
 			if cont_game is "Y" or "y":
 				play_turn()
 			elif cont_game is "N" or "n":
-				is_gameloop = False
+				return
 			else:
-				is_gameloop = False
+				return
 	
 
 start_game()
