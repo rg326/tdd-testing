@@ -146,8 +146,8 @@ def play_turn():
 	
 	my_turn = random.sample(list(hand), 3)
 	comp_turn = random.sample(list(hand), 3)
-	\
-	print(len(card_deck))\
+	
+	print(f"Cards remaining in deck: {len(card_deck)}")
 	
 	print("It's your turn!'")
 	print(my_turn)
@@ -171,16 +171,16 @@ def play_turn():
 		for x in my_turn:
 			del card_deck[x]
 		my_score += 1
-		print(f"Your current score is {my_score}. The computer's score is {comp_score}.")
+		print(f"Your current score is {my_score}. The computer's score is {comp_score}. Please enter 'Y/y' to continue or 'N/n' to leave.")
 		
 	elif comp_hand > my_hand:
 		print("You've lost this round. Please hold on to your current cards. Please press 'Y' or 'y' to continue.")
 		for x in comp_turn:
 			del card_deck[x]
 		comp_score += 1
-		print(f"The computer's current score is {comp_score}. Your score is {my_score}. Please press 'Y' or 'y' to continue.")	
+		print(f"The computer's current score is {comp_score}. Your score is {my_score}. Please enter 'Y/y' to continue or 'N/n' to leave.")	
 	else:
-		print("It's a draw! Please play another turn! Your current score is {my_score}. The computer's score is {comp_score}. Please press 'Y' or 'y' to continue.")
+		print("It's a draw! Please play another turn! Your current score is {my_score}. The computer's score is {comp_score}. Please enter 'Y/y' to continue or 'N/n' to leave.")
 		play_turn()
 		
 	
