@@ -194,14 +194,15 @@ def start_game():
 		print('Hello there! Welcome to Triple Threat! Would you like to play a round?')
 		#print('')
 		play_game = input('Press Y/y to play, and N/n to get out of here!\n')
-		is_gameloop = True
+		#is_gameloop = True
 		
 		
-		while is_gameloop:
+		while True:
 			if play_game is "Y" or "y":
 				play_turn()
-			if play_game is "N" or "n":
-				return None
+			elif play_game is "N" or "n":
+				print("Game Over")
+				break
 			
 			#if card_deck is not 0:	
 			#	print('Good round! Would you like to continue?')
@@ -213,9 +214,9 @@ def start_game():
 			if cont_game is "Y" or "y":
 				play_turn()
 			elif cont_game is "N" or "n":
+				print("Game Over")
 				break
-			else:
-				return
+			
 	
 
 start_game()
