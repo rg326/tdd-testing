@@ -131,6 +131,8 @@ def play_turn():
 	global my_hand
 	global comp_hand
 	
+	
+	
 	if len(card_deck) <= 1:
 		"""print(f"The game is over! Final score is: My score: {my_score}, Computer score: {comp_score}!")"""
 		if my_score > comp_score:
@@ -142,6 +144,8 @@ def play_turn():
 		elif my_score == comp_score:
 			print(f"There are no more cards in the deck. Your final score is {my_score}. The computer's score is {comp_score}. It's a draw! Care to play again?")
 			return None
+			
+			
 	
 	
 	my_turn = random.sample(list(hand), 3)
@@ -203,19 +207,21 @@ def start_game():
 			elif play_game is "N" or "n":
 				print("Game Over")
 				break
+				
+			cont_game = input('Nice round! Care to try again?')	
+			
+			if cont_game is "Y" or "y":
+				play_turn()
+			elif cont_game is "N" or "n":
+				print("Game Over")
+				return None
 			
 			#if card_deck is not 0:	
 			#	print('Good round! Would you like to continue?')
 			#elif card_deck == None:
 			#	break
 				#print('Great game! Want to go again?')
-			cont_game = input()	
 			
-			if cont_game is "Y" or "y":
-				play_turn()
-			elif cont_game is "N" or "n":
-				print("Game Over")
-				break
 			
 	
 
