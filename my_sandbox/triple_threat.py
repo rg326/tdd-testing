@@ -204,7 +204,7 @@ def start_game():
 		
 		if play_game is "Y":
 			play_turn()
-		elif play_game == "N":
+		elif play_game is "N":
 			print("Game Over")
 			return None
 			
@@ -213,7 +213,7 @@ def start_game():
 		
 		if cont_game is "Y":
 			play_turn()
-		elif cont_game == "N":
+		elif cont_game is "N":
 			print("Game Over")
 			return None
 		
