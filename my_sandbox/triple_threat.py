@@ -132,15 +132,6 @@ def play_turn():
 	global comp_hand
 	
 	
-	cont_game = input('Nice round! Care to try again?')
-	cont_game.upper()	
-			
-	if cont_game == "Y":
-		play_turn()
-	elif cont_game == "N":
-		print("Game Over")
-		return None
-	
 	if len(card_deck) <= 1:
 		"""print(f"The game is over! Final score is: My score: {my_score}, Computer score: {comp_score}!")"""
 		if my_score > comp_score:
@@ -153,6 +144,14 @@ def play_turn():
 			print(f"There are no more cards in the deck. Your final score is {my_score}. The computer's score is {comp_score}. It's a draw! Care to play again?")
 			return None
 			
+		cont_game = input('Nice round! Care to try again?')
+		cont_game.upper()	
+			
+	if cont_game == "Y":
+		play_turn()
+	elif cont_game == "N":
+		print("Game Over")
+		return None
 			
 	
 	
@@ -203,20 +202,22 @@ def play_turn():
 #	print(y)
 
 def start_game():
+	
+	is_gameloop = True
 		
-		while True:
-			print('Hello there! Welcome to Triple Threat! Would you like to play a round?')
-			#print('')
-			play_game = input('Enter Y/y to play, and N/n to get out of here!\n')
-			play_game.upper()
-			#is_gameloop = True
-			
-			
+	
+	print('Hello there! Welcome to Triple Threat! Would you like to play a round?')
+	#print('')
+	play_game = input('Enter Y/y to play, and N/n to get out of here!\n')
+	play_game.upper()
+	
+	while is_gameloop:
+		
 			if play_game == "Y":
 				play_turn()
 			elif play_game == "N":
 				print("Game Over")
-				break
+				is_gameloop = False
 				
 			
 		
