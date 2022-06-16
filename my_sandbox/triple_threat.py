@@ -209,17 +209,20 @@ def start_game():
 	elif play_game == "N":
 		print("Game Over")
 		return None
-			
+	
+	while len(card_deck) >= 1:		
 		
-	cont_game = input('Nice round! Care to try again?')
-	cont_game = cont_game.upper()	
+		cont_game = input('Nice round! Care to try again?')
+		cont_game = cont_game.upper()	
 		
-	if cont_game == "Y":
-		play_turn()
-	elif cont_game == "N":
-		print("Game Over")
-		return None
 		
+				
+		if cont_game == "Y":
+			play_turn()
+		elif cont_game == "N":
+			print("Game Over")
+			return None
+	
 	#if card_deck is not 0:	
 	#	print('Good round! Would you like to continue?')
 	#elif card_deck == None:
