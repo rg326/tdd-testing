@@ -132,7 +132,7 @@ def play_turn():
 	global comp_hand
 	
 	
-	if len(card_deck) <= 1:
+	if len(card_deck) == 0:
 		"""print(f"The game is over! Final score is: My score: {my_score}, Computer score: {comp_score}!")"""
 		if my_score > comp_score:
 			print(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You win! Care to play again?")
@@ -210,7 +210,7 @@ def start_game():
 		print("Game Over")
 		return None
 	
-	while len(card_deck) >= 1:		
+	while len(card_deck) > 1:		
 		
 		cont_game = input('Nice round! Care to try again?')
 		cont_game = cont_game.upper()	
@@ -222,6 +222,10 @@ def start_game():
 		elif cont_game == "N":
 			print("Game Over")
 			return None
+
+def end_game():
+	if len(card_deck) == 0:
+		print("Game Over")
 	
 	#if card_deck is not 0:	
 	#	print('Good round! Would you like to continue?')
@@ -233,6 +237,7 @@ def start_game():
 	
 
 start_game()
+end_game()
 
 ''' import random
 card_points =['A','K','Q','J','2','3','4','5','6','7','8','9','10']
