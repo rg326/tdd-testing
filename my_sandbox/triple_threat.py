@@ -144,14 +144,7 @@ def play_turn():
 			print(f"There are no more cards in the deck. Your final score is {my_score}. The computer's score is {comp_score}. It's a draw! Care to play again?")
 			return None
 			
-		cont_game = input('Nice round! Care to try again?')
-		cont_game.upper()	
-			
-	if cont_game == "Y":
-		play_turn()
-	elif cont_game == "N":
-		print("Game Over")
-		return None
+		
 			
 	
 	
@@ -215,12 +208,19 @@ def start_game():
 		
 			if play_game == "Y":
 				play_turn()
-			elif play_game == "N":
-				print("Game Over")
-				is_gameloop = False
+			#elif play_game == "N":
+			#	print("Game Over")
+				#is_gameloop = False
 				
 			
-		
+		cont_game = input('Nice round! Care to try again?')
+		cont_game.upper()	
+			
+	if cont_game == "Y":
+		play_turn()
+	elif cont_game == "N":
+		print("Game Over")
+		return None
 		#if card_deck is not 0:	
 		#	print('Good round! Would you like to continue?')
 		#elif card_deck == None:
