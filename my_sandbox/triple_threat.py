@@ -88,6 +88,7 @@ card_deck = {
 	'Joker B': 10
 }
 
+restore_deck = card_deck
 
 """my_turn_1 = random.choice(list(card_deck))
 my_turn_2 = random.choice(list(card_deck))
@@ -222,14 +223,34 @@ def end_game():
 	if len(card_deck) == 0:
 		"""print(f"The game is over! Final score is: My score: {my_score}, Computer score: {comp_score}!")"""
 		if my_score > comp_score:
-			print(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You win! Care to play again?")
+			play_again = input(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You win! Care to play again? Y/N")
+			play_again = play_again.upper()
+			
+			if play_again == "Y":
+				start_game()
+			else:
+				print("Game Over")
+				return None
+			
 			return None
 		elif comp_score > my_score:
-			print(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You Lose. Care to play again?")
-			return None
+			play_again = input(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You Lose. Care to play again? Y/N")
+			play_again = play_again.upper()
+			
+			if play_again == "Y":
+				start_game()
+			else:
+				print("Game Over")
+				return None
 		elif my_score == comp_score:
-			print(f"There are no more cards in the deck. Your final score is {my_score}. The computer's score is {comp_score}. It's a draw! Care to play again?")
-			return None
+			play_again = input(f"There are no more cards in the deck. Your final score is {my_score}. The computer's score is {comp_score}. It's a draw! Care to play again? Y/N")
+			play_again = play_again.upper()
+			
+			if play_again == "Y":
+				start_game()
+			else:
+				print("Game Over")
+				return None
 	
 	#if card_deck is not 0:	
 	#	print('Good round! Would you like to continue?')
