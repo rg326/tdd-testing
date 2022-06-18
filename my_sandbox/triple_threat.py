@@ -88,7 +88,7 @@ card_deck = {
 	'Joker B': 10
 }
 
-restore_deck = card_deck
+restore_deck = card_deck.copy()
 
 """my_turn_1 = random.choice(list(card_deck))
 my_turn_2 = random.choice(list(card_deck))
@@ -216,6 +216,8 @@ def end_game():
 	global comp_score
 	global my_hand
 	global comp_hand
+	global card_deck
+	global restore_deck
 	
 	#if len(card_deck) == 0:
 	#	print("Game Over")
@@ -227,6 +229,7 @@ def end_game():
 			play_again = play_again.upper()
 			
 			if play_again == "Y":
+				card_deck = restore_deck
 				start_game()
 			else:
 				print("Game Over")
@@ -238,6 +241,7 @@ def end_game():
 			play_again = play_again.upper()
 			
 			if play_again == "Y":
+				card_deck = restore_deck
 				start_game()
 			else:
 				print("Game Over")
@@ -247,6 +251,7 @@ def end_game():
 			play_again = play_again.upper()
 			
 			if play_again == "Y":
+				card_deck = restore_deck
 				start_game()
 			else:
 				print("Game Over")
