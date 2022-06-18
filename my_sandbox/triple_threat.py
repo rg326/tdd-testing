@@ -224,6 +224,11 @@ def start_game():
 			return None
 
 def end_game():
+	global my_score
+	global comp_score
+	global my_hand
+	global comp_hand
+	
 	if len(card_deck) == 0:
 		print("Game Over")
 	
