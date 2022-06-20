@@ -28,8 +28,10 @@
 # Will most likely still refactor to javascript. Each item in the card deck will be its own distinct object ie: {card.title, card.value, card.image}
 
 #Figuring out how to restore card deck for new game
+# Trying to make it work with copy or deepcopy (need to play around with it more)
 
 import random
+import copy
 import time
 
 
@@ -90,7 +92,7 @@ card_deck = {
 	'Joker B': 10
 }
 
-restore_deck = card_deck
+restore_deck = copy.deepcopy(card_deck)
 
 """my_turn_1 = random.choice(list(card_deck))
 my_turn_2 = random.choice(list(card_deck))
