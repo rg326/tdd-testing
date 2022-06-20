@@ -27,6 +27,8 @@
 # Fixed it! Remember to place global variables at the top of the function instead
 # Will most likely still refactor to javascript. Each item in the card deck will be its own distinct object ie: {card.title, card.value, card.image}
 
+#Figuring out how to restore card deck for new game
+
 import random
 import time
 
@@ -88,7 +90,7 @@ card_deck = {
 	'Joker B': 10
 }
 
-restore_deck = card_deck.copy()
+restore_deck = card_deck
 
 """my_turn_1 = random.choice(list(card_deck))
 my_turn_2 = random.choice(list(card_deck))
