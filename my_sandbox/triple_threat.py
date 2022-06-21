@@ -135,10 +135,6 @@ def play_turn():
 	global comp_score
 	global my_hand
 	global comp_hand
-			
-		
-			
-	
 	
 	my_turn = random.sample(list(hand), 3)
 	comp_turn = random.sample(list(hand), 3)
