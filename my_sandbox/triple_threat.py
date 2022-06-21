@@ -184,6 +184,7 @@ def play_turn():
 
 def start_game():
 	
+	
 	#is_gameloop = True
 		
 	
@@ -251,7 +252,7 @@ def end_game():
 			play_again = play_again.upper()
 			
 			if play_again == "Y":
-				card_deck = restore_deck.copy()
+				#card_deck = restore_deck.copy()
 				start_game()
 			else:
 				print("Game Over")
