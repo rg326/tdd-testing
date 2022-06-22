@@ -94,29 +94,9 @@ card_deck = {
 
 restore_deck = copy.deepcopy(card_deck)
 
-"""my_turn_1 = random.choice(list(card_deck))
-my_turn_2 = random.choice(list(card_deck))
-my_turn_3 = random.choice(list(card_deck))
-comp_turn_1 = random.choice(list(card_deck))
-comp_turn_2 = random.choice(list(card_deck))
-comp_turn_3 = random.choice(list(card_deck))"""
-
-"""my_turn_1 = random.sample(card_deck.items(), 1)
-my_turn_2 = random.sample(card_deck.items(), 1)
-my_turn_3 = random.sample(card_deck.items(), 1)
-comp_turn_1 = random.sample(card_deck.items(), 1)
-comp_turn_2 = random.sample(card_deck.items(), 1)
-comp_turn_3 = random.sample(card_deck.items(), 1)"""
 
 hand = card_deck.keys()
 
-"""my_turn_1 = random.sample(list(hand), 1)
-my_turn_2 = random.sample(list(hand), 1)
-my_turn_3 = random.sample(list(hand), 1)
-
-comp_turn_1 = random.sample(list(hand), 1)
-comp_turn_2 = random.sample(list(hand), 1)
-comp_turn_3 = random.sample(list(hand), 1)"""
 
 #Variables
 my_deck = {}
