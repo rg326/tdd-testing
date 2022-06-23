@@ -34,7 +34,7 @@ import random
 import copy
 import time
 
-
+#THE STARTING DECK
 starting_deck = {
 	'A of Hearts': 1,
 	'A of Diamonds': 1,
@@ -92,6 +92,8 @@ starting_deck = {
 	'Joker B': 10
 }
 
+#COPYING STARTING DECK BY VALUE TO EMPTY CARD DECK
+card_deck = {}
 card_deck = copy.deepcopy(starting_deck)
 
 
