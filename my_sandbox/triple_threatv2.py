@@ -35,7 +35,7 @@ import copy
 import time
 
 
-card_deck = {
+starting_deck = {
 	'A of Hearts': 1,
 	'A of Diamonds': 1,
 	'A of Clubs': 1,
@@ -92,7 +92,7 @@ card_deck = {
 	'Joker B': 10
 }
 
-restore_deck = copy.deepcopy(card_deck)
+card_deck = copy.deepcopy(starting_deck)
 
 
 hand = card_deck.keys()
@@ -115,6 +115,8 @@ def play_turn():
 	global comp_score
 	global my_hand
 	global comp_hand
+	global starting_deck
+	global card_deck
 	
 	my_turn = random.sample(list(hand), 3)
 	comp_turn = random.sample(list(hand), 3)
@@ -163,8 +165,10 @@ def play_turn():
 #	print(y)
 
 def start_game():
+	global starting_deck
+	global card_deck
 	
-	
+	card_deck = copy.deepcopy(starting_deck)
 	#is_gameloop = True
 		
 	
@@ -210,7 +214,7 @@ def end_game():
 			play_again = play_again.upper()
 			
 			if play_again == "Y":
-				card_deck = restore_deck
+				#card_deck = copy.deepcopy(starting_deck)
 				start_game()
 			else:
 				print("Game Over")
@@ -222,7 +226,7 @@ def end_game():
 			play_again = play_again.upper()
 			
 			if play_again == "Y":
-				card_deck = copy.deepcopy(restore_deck)
+				#card_deck = copy.deepcopy(starting_deck)
 				start_game()
 			else:
 				print("Game Over")
@@ -232,7 +236,7 @@ def end_game():
 			play_again = play_again.upper()
 			
 			if play_again == "Y":
-				#card_deck = restore_deck.copy()
+				#card_deck = copy.deepcopy(starting_deck)
 				start_game()
 			else:
 				print("Game Over")
