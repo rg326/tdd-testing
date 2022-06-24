@@ -113,6 +113,7 @@ comp_hand = 0
 
 
 def play_turn():
+	global hand
 	global my_score
 	global comp_score
 	global my_hand
@@ -187,7 +188,7 @@ def start_game():
 	
 	while len(card_deck) > 1:		
 		
-		cont_game = input('Nice round! Care to try again?')
+		cont_game = input('Nice round! Care to try again? Y/N \n')
 		cont_game = cont_game.upper()	
 		
 		
