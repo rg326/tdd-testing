@@ -29,6 +29,7 @@
 
 #Figuring out how to restore card deck for new game
 # Trying to make it work with copy or deepcopy (need to play around with it more)
+# Figuring out how to fix random keyerror that appears during iteration of deck
 
 import random
 import copy
