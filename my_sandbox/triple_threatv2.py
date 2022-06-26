@@ -32,6 +32,7 @@
 # Figuring out how to fix random keyerror that appears during iteration of deck
 
 #Look up more pass by value related methods
+#Find out why deepcopy isn't working as expected
 
 import random
 import copy
