@@ -33,6 +33,7 @@
 
 #Look up more pass by value related methods
 #Find out why deepcopy isn't working as expected
+#Realized card deck is NOT the same copy as starting deck
 
 import random
 import copy
@@ -97,8 +98,8 @@ starting_deck = {
 }
 
 #COPYING STARTING DECK BY VALUE TO EMPTY CARD DECK
-card_deck = {}
-card_deck = copy.deepcopy(starting_deck)
+#card_deck = {}
+#card_deck = copy.deepcopy(starting_deck)
 
 
 hand = card_deck.keys()
@@ -127,6 +128,8 @@ def play_turn():
 	
 	my_turn = random.sample(list(hand), 3)
 	comp_turn = random.sample(list(hand), 3)
+	
+	print(card_deck)
 	
 	print(f"Cards remaining in deck: {len(card_deck)}")
 	
