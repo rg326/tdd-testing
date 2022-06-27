@@ -99,7 +99,7 @@ starting_deck = {
 
 #COPYING STARTING DECK BY VALUE TO EMPTY CARD DECK
 #card_deck = {}
-#card_deck = copy.deepcopy(starting_deck)
+card_deck = copy.deepcopy(starting_deck)
 
 
 hand = card_deck.keys()
