@@ -34,6 +34,7 @@
 #Look up more pass by value related methods
 #Find out why deepcopy isn't working as expected
 #Realized card deck is NOT the same copy as starting deck
+#Attempted to restore deck with a function
 
 import random
 import copy
