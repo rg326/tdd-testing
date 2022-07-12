@@ -36,6 +36,7 @@
 #Realized card deck is NOT the same copy as starting deck
 #Attempted to restore deck with a function
 #Find a way to manually deep copy the dict within the function
+# populating deck issue is the problem
 
 
 import random
