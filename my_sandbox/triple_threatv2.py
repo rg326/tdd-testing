@@ -38,6 +38,7 @@
 #Find a way to manually deep copy the dict within the function
 # populating deck issue is the problem
 # working in js might be easier
+# found out objects are harder to work with in js compared to dicts in python
 
 
 import random
