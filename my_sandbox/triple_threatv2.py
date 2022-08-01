@@ -234,7 +234,7 @@ def restore_deck():
 	'Joker B': 10
 	}
 	
-	#return card_deck
+	return card_deck
 	
 
 
@@ -290,7 +290,7 @@ def end_game():
 			play_again = input(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You win! Care to play again? Y/N")
 			play_again = play_again.upper()
 			
-			#RESTAR GAME
+			#RESTART GAME
 			if play_again == "Y":
 				restore_deck()
 				#card_deck = copy.deepcopy(starting_deck)
@@ -301,7 +301,7 @@ def end_game():
 			
 			return None
 		elif comp_score > my_score:
-			play_again = input(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You Lose. Care to play again? Y/N")
+			play_again = input(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You Lose. Care to play again? Y/N \n")
 			play_again = play_again.upper()
 			
 			#RESTART GAME
