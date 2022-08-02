@@ -174,6 +174,45 @@ def play_turn():
 		print("It's a draw! Please play another turn! Your current score is {my_score}. The computer's score is {comp_score}. Please enter 'Y/y' to continue or 'N/n' to leave.")
 		play_turn()
 		
+
+	
+
+
+#for x in card_deck:
+#	print(y)
+
+def start_game():
+	#global starting_deck
+	#global card_deck
+	
+	#card_deck = copy.deepcopy(starting_deck)
+	#is_gameloop = True
+		
+	
+	print('Hello there! Welcome to Triple Threat! Would you like to play a round?')
+	#print('')
+	play_game = input('Enter Y/y to play, and N/n to get out of here!\n')
+	play_game = play_game.upper()
+		
+	if play_game == "Y":
+		play_turn()
+	elif play_game == "N":
+		print("Game Over")
+		return None
+	
+	while len(card_deck) > 1:		
+		
+		cont_game = input('Nice round! Care to try again? Y/N \n')
+		cont_game = cont_game.upper()	
+		
+		
+				
+		if cont_game == "Y":
+			play_turn()
+		elif cont_game == "N":
+			print("Game Over")
+			return None
+			
 def restore_deck():
 	global card_deck
 	
@@ -235,43 +274,6 @@ def restore_deck():
 	}
 	
 	return card_deck
-	
-
-
-#for x in card_deck:
-#	print(y)
-
-def start_game():
-	#global starting_deck
-	#global card_deck
-	
-	#card_deck = copy.deepcopy(starting_deck)
-	#is_gameloop = True
-		
-	
-	print('Hello there! Welcome to Triple Threat! Would you like to play a round?')
-	#print('')
-	play_game = input('Enter Y/y to play, and N/n to get out of here!\n')
-	play_game = play_game.upper()
-		
-	if play_game == "Y":
-		play_turn()
-	elif play_game == "N":
-		print("Game Over")
-		return None
-	
-	while len(card_deck) > 1:		
-		
-		cont_game = input('Nice round! Care to try again? Y/N \n')
-		cont_game = cont_game.upper()	
-		
-		
-				
-		if cont_game == "Y":
-			play_turn()
-		elif cont_game == "N":
-			print("Game Over")
-			return None
 
 def end_game():
 	global my_score
