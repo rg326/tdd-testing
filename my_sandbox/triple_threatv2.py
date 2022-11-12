@@ -39,6 +39,7 @@
 # populating deck issue is the problem
 # working in js might be easier
 # found out objects are harder to work with in js compared to dicts in python
+# still having difficulty repopulating the deck after game reset
 
 
 import random
