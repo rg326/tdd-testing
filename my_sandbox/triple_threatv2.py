@@ -116,8 +116,8 @@ hand = card_deck.keys()
 #Variables
 my_deck = {}
 comp_deck = {}
-my_turn = random.choice(list(hand), 3)
-comp_turn = random.choice(list(hand), 3)
+my_turn = random.sample(list(hand), 3)
+comp_turn = random.sample(list(hand), 3)
 
 my_score = 0
 comp_score = 0
@@ -134,8 +134,8 @@ def play_turn():
 	#global starting_deck
 	global card_deck
 	
-	my_turn = random.choice(list(hand), 3)
-	comp_turn = random.choice(list(hand), 3)
+	my_turn = random.sample(list(hand), 3)
+	comp_turn = random.sample(list(hand), 3)
 	
 	print(card_deck)
 	
@@ -273,6 +273,8 @@ def restore_deck():
 	'Joker A': 10,
 	'Joker B': 10
 	}
+
+	return card_deck
 
 def end_game():
 	global my_score
