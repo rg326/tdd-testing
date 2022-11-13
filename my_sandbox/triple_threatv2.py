@@ -119,8 +119,11 @@ comp_deck = {}
 my_turn = random.sample(list(hand), 3)
 comp_turn = random.sample(list(hand), 3)
 
-my_score = 0
+#counters for keeping score
+my_score = 0 
 comp_score = 0
+
+#sum of hand per turn for each player
 my_hand = 0
 comp_hand = 0
 
