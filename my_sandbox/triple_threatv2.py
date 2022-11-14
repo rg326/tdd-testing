@@ -276,9 +276,8 @@ def restore_deck():
 	'Joker A': 10,
 	'Joker B': 10
 	}'''
-
+	
 	card_deck = copy.deepcopy(starting_deck)
-	return card_deck
 
 def end_game():
 	global my_score
