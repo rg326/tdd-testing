@@ -47,7 +47,7 @@ import copy
 import time
 
 #THE STARTING DECK
-card_deck = {
+starting_deck = {
 	'A of Hearts': 1,
 	'A of Diamonds': 1,
 	'A of Clubs': 1,
@@ -107,7 +107,7 @@ card_deck = {
 
 #COPYING STARTING DECK BY VALUE TO EMPTY CARD DECK
 #card_deck = {}
-#card_deck = copy.deepcopy(starting_deck)
+card_deck = copy.deepcopy(starting_deck)
 
 
 hand = card_deck.keys()
@@ -218,9 +218,9 @@ def start_game():
 			return None
 			
 def restore_deck():
-	global card_deck
+	global starting_deck
 	
-	card_deck = {
+	'''card_deck = {
 	'A of Hearts': 1,
 	'A of Diamonds': 1,
 	'A of Clubs': 1,
@@ -275,8 +275,9 @@ def restore_deck():
 	'King of Spades': 3,
 	'Joker A': 10,
 	'Joker B': 10
-	}
+	}'''
 
+	card_deck = copy.deepcopy(starting_deck)
 	return card_deck
 
 def end_game():
