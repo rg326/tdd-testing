@@ -130,7 +130,7 @@ comp_score = 0
 my_hand = 0
 comp_hand = 0
 
-
+#function to play a turn
 def play_turn():
 	global hand
 	global my_score
@@ -140,9 +140,11 @@ def play_turn():
 	#global starting_deck
 	global card_deck
 	
+	#picking out 3 cards at random from the keys in hand variable
 	my_turn = random.sample(list(hand), 3)
 	comp_turn = random.sample(list(hand), 3)
 	
+	#display remaining cards in card deck
 	print(card_deck)
 	
 	print(f"Cards remaining in deck: {len(card_deck)}")
@@ -164,13 +166,20 @@ def play_turn():
 	#print(comp_turn_2)
 	#print(comp_turn_3)
 	
+	#Setting up the conditionals for various win/lose scenarios
+
+	#If player beats computer in a turn
 	if my_hand > comp_hand:
 		print("You win this round! Please discard your hand.")
+
+		#remove the card from the card deck for each 3 cards and add the value of each card in the hand played to player's score
 		for x in my_turn:
 			del card_deck[x]
 		my_score += 1
 		print(f"Your current score is {my_score}. The computer's score is {comp_score}. Please enter 'Y/y' to continue or 'N/n' to leave.")
-		
+
+	#If computer beats player in a turn
+	#Do the same for above, but for the computer		
 	elif comp_hand > my_hand:
 		print("You've lost this round. Please hold on to your current cards. Please press 'Y' or 'y' to continue.")
 		for x in comp_turn:
