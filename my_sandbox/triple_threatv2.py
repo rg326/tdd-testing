@@ -109,12 +109,15 @@ starting_deck = {
 #card_deck = {}
 card_deck = copy.deepcopy(starting_deck)
 
-
+#Getting the keys of the deck as an array for each hand played
 hand = card_deck.keys()
 
 
 #Variables
+
+#Initializing empty deck for player
 my_deck = {}
+#Initializing empty deck for computer
 comp_deck = {}
 my_turn = random.sample(list(hand), 3)
 comp_turn = random.sample(list(hand), 3)
