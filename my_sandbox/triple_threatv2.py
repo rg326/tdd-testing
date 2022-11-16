@@ -228,7 +228,8 @@ def start_game():
 		elif cont_game == "N":
 			print("Game Over")
 			return None
-			
+
+# function to restore deck on game replay			
 def restore_deck():
 	global starting_deck
 	
