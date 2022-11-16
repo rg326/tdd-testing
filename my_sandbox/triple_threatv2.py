@@ -292,6 +292,7 @@ def restore_deck():
 	
 	card_deck = copy.deepcopy(starting_deck)
 
+# function to end the game
 def end_game():
 	global my_score
 	global comp_score
