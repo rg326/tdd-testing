@@ -304,7 +304,7 @@ def end_game():
 	#if len(card_deck) == 0:
 	#	print("Game Over")
 	
-	#If the card deck is empty:
+	#If the card deck is empty (no more cards left):
 	if len(card_deck) == 0:
 		"""print(f"The game is over! Final score is: My score: {my_score}, Computer score: {comp_score}!")"""
 		if my_score > comp_score:
