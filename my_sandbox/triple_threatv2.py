@@ -336,6 +336,7 @@ def end_game():
 				print("Game Over")
 				return None
 				
+		# If the final score is a tie:
 		elif my_score == comp_score:
 			play_again = input(f"There are no more cards in the deck. Your final score is {my_score}. The computer's score is {comp_score}. It's a draw! Care to play again? Y/N")
 			play_again = play_again.upper()
