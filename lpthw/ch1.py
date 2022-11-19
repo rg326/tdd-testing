@@ -37,5 +37,5 @@ print("What is 5 - 7?", 5 - 7)
 
 print("Oh, that's why it's False.")
 
-
+# Follows Order of Operation: PEMDAS
 
