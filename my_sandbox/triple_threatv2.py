@@ -216,6 +216,7 @@ def start_game():
 		print("Game Over")
 		return None
 	
+	# While the deck isn't empty:
 	while len(card_deck) > 1:		
 		
 		cont_game = input('Nice round! Care to try again? Y/N \n')
