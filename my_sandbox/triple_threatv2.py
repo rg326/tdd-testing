@@ -204,7 +204,7 @@ def start_game():
 	#card_deck = copy.deepcopy(starting_deck)
 	#is_gameloop = True
 		
-	
+	# Main Greeting
 	print('Hello there! Welcome to Triple Threat! Would you like to play a round?')
 	#print('')
 	play_game = input('Enter Y/y to play, and N/n to get out of here!\n')
