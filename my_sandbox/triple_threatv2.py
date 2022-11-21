@@ -209,7 +209,8 @@ def start_game():
 	#print('')
 	play_game = input('Enter Y/y to play, and N/n to get out of here!\n')
 	play_game = play_game.upper()
-		
+
+	#If player selects yes vs. no	
 	if play_game == "Y":
 		play_turn()
 	elif play_game == "N":
