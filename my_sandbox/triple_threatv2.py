@@ -309,6 +309,8 @@ def end_game():
 	#If the card deck is empty (no more cards left):
 	if len(card_deck) == 0:
 		"""print(f"The game is over! Final score is: My score: {my_score}, Computer score: {comp_score}!")"""
+
+		# If the player wins:
 		if my_score > comp_score:
 			play_again = input(f"There are no more cards to choose from. Your final score is {my_score}. The computer's score is {comp_score}. You win! Care to play again? Y/N")
 			play_again = play_again.upper()
