@@ -40,7 +40,8 @@
 # working in js might be easier
 # found out objects are harder to work with in js compared to dicts in python
 # still having difficulty repopulating the deck after game reset
-# added deepcopy
+# added deepcopy (didn't work)
+# current goal: getting restore deck to work
 
 import random
 import copy
