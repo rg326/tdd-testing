@@ -374,7 +374,11 @@ def end_game():
 			
 	
 # Executing functions
+
+# Starts Game
 start_game()
+
+# Ends Game
 end_game()
 
 
