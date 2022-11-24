@@ -367,7 +367,7 @@ def end_game():
 			
 			
 	
-
+# executing functions
 start_game()
 end_game()
 
