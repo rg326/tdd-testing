@@ -322,6 +322,8 @@ def end_game():
 				#card_deck = copy.deepcopy(starting_deck)
 				start_game()
 			else:
+
+				# End game
 				print("Game Over")
 				return None
 			
@@ -367,7 +369,7 @@ def end_game():
 			
 			
 	
-# executing functions
+# Executing functions
 start_game()
 end_game()
 
