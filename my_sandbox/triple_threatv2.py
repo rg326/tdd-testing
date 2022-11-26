@@ -44,6 +44,7 @@
 # current goal: getting restore deck to work
 # stuck with the flu
 # stuck with the flu, will resume monday
+# flu
 
 
 # ======
