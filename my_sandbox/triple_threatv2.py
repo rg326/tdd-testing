@@ -46,6 +46,7 @@
 # stuck with the flu, will resume monday
 # flu - sat
 # flu - sun
+# turns out it was actually bronchitis
 
 # ======
 
