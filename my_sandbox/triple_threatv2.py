@@ -47,6 +47,7 @@
 # flu - sat
 # flu - sun
 # turns out it was actually bronchitis
+# will attempt to return to project tomorrow
 
 # ======
 
