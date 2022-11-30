@@ -242,10 +242,10 @@ def start_game():
 			return None
 
 # function to restore deck on game replay			
-def restore_deck():
+'''def restore_deck():
 	global starting_deck
 	
-	'''card_deck = {
+	card_deck = {
 	'A of Hearts': 1,
 	'A of Diamonds': 1,
 	'A of Clubs': 1,
@@ -300,9 +300,9 @@ def restore_deck():
 	'King of Spades': 3,
 	'Joker A': 10,
 	'Joker B': 10
-	}'''
+	}
 	
-	card_deck = copy.deepcopy(starting_deck)
+	card_deck = copy.deepcopy(starting_deck)'''
 
 # function to end the game
 def end_game():
@@ -311,7 +311,7 @@ def end_game():
 	global my_hand
 	global comp_hand
 	global card_deck
-	global restore_deck
+	#global restore_deck
 	
 	#if len(card_deck) == 0:
 	#	print("Game Over")
@@ -345,8 +345,7 @@ def end_game():
 			
 			# RESTART GAME
 			if play_again == "Y":
-				restore_deck()
-				#card_deck = copy.deepcopy(starting_deck)
+				card_deck = copy.deepcopy(starting_deck)
 				start_game()
 				
 			# GAME OVER SCREEN	
