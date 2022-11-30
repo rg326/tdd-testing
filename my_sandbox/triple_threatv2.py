@@ -48,6 +48,7 @@
 # flu - sun
 # turns out it was actually bronchitis
 # will attempt to return to project tomorrow
+# commented out restore_deck function and attempted once more to get deepcopy method in restart_game to work
 
 # ======
 
