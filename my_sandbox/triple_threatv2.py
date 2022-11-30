@@ -50,6 +50,7 @@
 # will attempt to return to project tomorrow
 # commented out restore_deck function and attempted once more to get deepcopy method in restart_game to work
 # deepcopy still doesn't work. not sure what's the problem
+# attempt to generate deck from function create_deck() from the start
 
 # ======
 
