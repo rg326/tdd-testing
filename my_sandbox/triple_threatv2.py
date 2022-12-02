@@ -52,6 +52,7 @@
 # deepcopy still doesn't work. not sure what's the problem
 # attempt to generate deck from function create_deck() from the start
 # attempt to fix starting deck not defined outside function scope
+# fixed starting deck not defined bug
 
 # ======
 
