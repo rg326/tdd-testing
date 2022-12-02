@@ -51,6 +51,7 @@
 # commented out restore_deck function and attempted once more to get deepcopy method in restart_game to work
 # deepcopy still doesn't work. not sure what's the problem
 # attempt to generate deck from function create_deck() from the start
+# attempt to fix starting deck not defined outside function scope
 
 # ======
 
@@ -59,7 +60,11 @@ import random
 import copy
 import time
 
+
+starting_deck = {}
+
 def create_deck():
+	global starting_deck
 #THE STARTING DECK
 	starting_deck = {
 		'A of Hearts': 1,
