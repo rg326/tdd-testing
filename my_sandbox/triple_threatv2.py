@@ -125,7 +125,7 @@ def create_deck():
 
 	return starting_deck
 
-
+starting_deck = create_deck()
 #COPYING STARTING DECK BY VALUE TO EMPTY CARD DECK
 #card_deck = {}
 card_deck = copy.deepcopy(starting_deck)
@@ -228,9 +228,9 @@ def start_game():
 	# Main Greeting
 	print('Hello there! Welcome to Triple Threat! Would you like to play a round?')
 	#print('')
+	#create_deck()
 	play_game = input('Enter Y/y to play, and N/n to get out of here!\n')
 	play_game = play_game.upper()
-	create_deck()
 
 	#If player selects yes vs. no	
 	if play_game == "Y":
