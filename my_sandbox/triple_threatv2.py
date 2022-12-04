@@ -324,7 +324,7 @@ def end_game():
 	global my_hand
 	global comp_hand
 	global card_deck
-	#global restore_deck
+	global create_deck
 	
 	#if len(card_deck) == 0:
 	#	print("Game Over")
@@ -340,8 +340,7 @@ def end_game():
 			
 			# RESTART GAME
 			if play_again == "Y":
-				restore_deck()
-				#card_deck = copy.deepcopy(starting_deck)
+				starting_deck = create_deck()
 				start_game()
 			else:
 
@@ -358,7 +357,7 @@ def end_game():
 			
 			# RESTART GAME
 			if play_again == "Y":
-				card_deck = copy.deepcopy(starting_deck)
+				starting_deck = create_deck()
 				start_game()
 				
 			# GAME OVER SCREEN	
@@ -373,8 +372,7 @@ def end_game():
 			
 			#RESTART GAME
 			if play_again == "Y":
-				restore_deck()
-				#card_deck = copy.deepcopy(starting_deck)
+				starting_deck = create_deck()
 				start_game()
 				
 			#GAME OVER SCREEN	
@@ -397,5 +395,4 @@ start_game()
 
 # Ends Game
 end_game()
-
 
