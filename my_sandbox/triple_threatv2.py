@@ -62,7 +62,6 @@ import random
 import copy
 import time
 
-
 starting_deck = {}
 
 def create_deck():
