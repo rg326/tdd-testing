@@ -54,6 +54,7 @@
 # attempt to fix starting deck not defined outside function scope
 # fixed starting deck not defined bug
 # attempt to separate create deck function from the actual deck
+# accidentally reverted changes -_-;. try again tomorrow
 
 # ======
 
