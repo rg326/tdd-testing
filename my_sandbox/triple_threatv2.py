@@ -55,6 +55,7 @@
 # fixed starting deck not defined bug
 # attempt to separate create deck function from the actual deck
 # accidentally reverted changes -_-;. try again tomorrow
+# attempt to create and initiate starting deck variable in start game function instead
 
 # ======
 
@@ -341,6 +342,7 @@ def end_game():
 			
 			# RESTART GAME
 			if play_again == "Y":
+				create_deck()
 				starting_deck = create_deck()
 				start_game()
 			else:
@@ -358,6 +360,7 @@ def end_game():
 			
 			# RESTART GAME
 			if play_again == "Y":
+				create_deck()
 				starting_deck = create_deck()
 				start_game()
 				
