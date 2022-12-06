@@ -373,6 +373,7 @@ def end_game():
 			
 			#RESTART GAME
 			if play_again == "Y":
+				create_deck()
 				starting_deck = create_deck()
 				start_game()
 				
