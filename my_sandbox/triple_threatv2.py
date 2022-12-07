@@ -56,6 +56,7 @@
 # attempt to separate create deck function from the actual deck
 # accidentally reverted changes -_-;. try again tomorrow
 # attempt to create and initiate starting deck variable in start game function instead
+# attempt to ensure deck is recreated upon restart game. might create a restart game function
 
 # ======
 
