@@ -222,9 +222,12 @@ def play_turn():
 #	print(y)
 
 def start_game():
-	#global starting_deck
+	global starting_deck
+	global create_deck
 	#global card_deck
 	
+	starting_deck = create_deck()
+
 	#card_deck = copy.deepcopy(starting_deck)
 	#is_gameloop = True
 		
