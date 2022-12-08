@@ -260,6 +260,15 @@ def start_game():
 			print("Game Over")
 			return None
 
+def restart_game():
+	global starting_deck
+
+	starting_deck = create_deck()
+	card_deck = copy.deepcopy(starting_deck)
+
+	return starting_deck
+
+
 # function to restore deck on game replay			
 '''def restore_deck():
 	global starting_deck
@@ -331,6 +340,7 @@ def end_game():
 	global comp_hand
 	global card_deck
 	global create_deck
+	global restart_game
 	
 	#if len(card_deck) == 0:
 	#	print("Game Over")
@@ -346,9 +356,10 @@ def end_game():
 			
 			# RESTART GAME
 			if play_again == "Y":
-				create_deck()
-				starting_deck = create_deck()
-				start_game()
+				restart_game()
+				#create_deck()
+				#starting_deck = create_deck()
+				#start_game()
 			else:
 
 				# End game
@@ -364,9 +375,10 @@ def end_game():
 			
 			# RESTART GAME
 			if play_again == "Y":
-				create_deck()
-				starting_deck = create_deck()
-				start_game()
+				restart_game()
+				#create_deck()
+				#starting_deck = create_deck()
+				#start_game()
 				
 			# GAME OVER SCREEN	
 			else:
@@ -380,9 +392,10 @@ def end_game():
 			
 			#RESTART GAME
 			if play_again == "Y":
-				create_deck()
-				starting_deck = create_deck()
-				start_game()
+				restart_game()
+				#create_deck()
+				#starting_deck = create_deck()
+				#start_game()
 				
 			#GAME OVER SCREEN	
 			else:
