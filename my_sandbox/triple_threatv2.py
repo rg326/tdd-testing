@@ -266,8 +266,8 @@ def restart_game():
 
 	starting_deck = create_deck()
 	card_deck = copy.deepcopy(starting_deck)
-
-	return starting_deck
+	start_game()
+	#return starting_deck
 
 
 # function to restore deck on game replay			
