@@ -262,7 +262,10 @@ def start_game():
 			return None
 
 def restart_game():
+	global create_deck
 	global starting_deck
+	global card_deck
+	global start_game
 
 	starting_deck = create_deck()
 	card_deck = copy.deepcopy(starting_deck)
