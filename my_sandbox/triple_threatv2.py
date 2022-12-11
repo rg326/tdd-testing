@@ -60,6 +60,7 @@
 # breaks out of game loop, try keeping restart_game() from resetting game altogether
 # fixed game from resetting but back to population bug again
 # attempt to add deck to restart game function
+# small edit with previous git commit
 
 # ======
 
