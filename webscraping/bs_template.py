@@ -9,3 +9,6 @@ page = requests.get(url)
 
 # Soup is another name for the data being scraped in this context
 soup = BeautifulSoup(url.text, 'html.parser')
+
+#soup.find('html-element', attrs={'attribute': 'attribute-name'})
+entries = soup.find('div', )
