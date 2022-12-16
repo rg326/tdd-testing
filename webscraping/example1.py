@@ -1,3 +1,5 @@
+# Taken from https://havidr.medium.com/how-to-extract-data-with-python-beautifulsoup-80a5efddb3d1
+
 from bs4 import BeautifulSoup
 
 url = requests.get('https://id.carousell.com/categories/books-and-stationery-5')
