@@ -133,13 +133,13 @@ def create_deck():
 
 	return starting_deck
 
-starting_deck = create_deck()
-#COPYING STARTING DECK BY VALUE TO EMPTY CARD DECK
-#card_deck = {}
-card_deck = copy.deepcopy(starting_deck)
+# starting_deck = create_deck()
+# #COPYING STARTING DECK BY VALUE TO EMPTY CARD DECK
+# #card_deck = {}
+# card_deck = copy.deepcopy(starting_deck)
 
-#Getting the keys of the deck as an array for each hand played
-hand = card_deck.keys()
+# #Getting the keys of the deck as an array for each hand played
+# hand = card_deck.keys()
 
 #Variables
 
@@ -231,6 +231,20 @@ def start_game():
 	global starting_deck
 	global create_deck
 	global card_deck
+
+
+
+	#===========
+
+	starting_deck = create_deck()
+	#COPYING STARTING DECK BY VALUE TO EMPTY CARD DECK
+	#card_deck = {}
+	card_deck = copy.deepcopy(starting_deck)
+
+	#Getting the keys of the deck as an array for each hand played
+	hand = card_deck.keys()
+
+	#===========
 	
 	starting_deck = create_deck()
 
