@@ -62,7 +62,7 @@
 # attempt to add deck to restart game function
 # small edit with previous git commit
 # organize functions start game and play turn in a way that one does not preclude the declaration of the other (might move to v3 file for code cleanup)
-
+# reminder to uncomment the variables at the top (they need to be global)
 # ======
 
 # Import modules
