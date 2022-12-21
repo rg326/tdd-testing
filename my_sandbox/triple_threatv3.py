@@ -140,3 +140,7 @@ def play_turn():
 	global comp_hand
 	global starting_deck
 	global card_deck
+
+	#picking out 3 cards at random from the keys in hand variable
+	my_turn = random.sample(list(hand), 3)
+	comp_turn = random.sample(list(hand), 3)
