@@ -144,3 +144,8 @@ def play_turn():
 	#picking out 3 cards at random from the keys in hand variable
 	my_turn = random.sample(list(hand), 3)
 	comp_turn = random.sample(list(hand), 3)
+
+	#display remaining cards in card deck
+	print(card_deck)
+	
+	print(f"Cards remaining in deck: {len(card_deck)}")
