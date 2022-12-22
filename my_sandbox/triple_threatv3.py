@@ -149,3 +149,11 @@ def play_turn():
 	print(card_deck)
 	
 	print(f"Cards remaining in deck: {len(card_deck)}")
+
+	print("It's your turn!'")
+	print(my_turn)
+	for x in my_turn:
+		print(card_deck[x])
+		my_hand += card_deck[x]
+	#print(my_turn_2)
+	#print(my_turn_3)
