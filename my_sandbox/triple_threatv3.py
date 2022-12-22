@@ -157,3 +157,12 @@ def play_turn():
 		my_hand += card_deck[x]
 	#print(my_turn_2)
 	#print(my_turn_3)
+
+	print("It's the computer's turn!")
+	#time.sleep(2)
+	print(comp_turn)
+	for x in comp_turn:
+		print(card_deck[x])
+		comp_hand += card_deck[x] 
+	#print(comp_turn_2)
+	#print(comp_turn_3)
