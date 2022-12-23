@@ -166,3 +166,6 @@ def play_turn():
 		comp_hand += card_deck[x] 
 	#print(comp_turn_2)
 	#print(comp_turn_3)
+
+	#holiday break
+	
