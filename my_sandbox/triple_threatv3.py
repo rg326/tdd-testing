@@ -1,6 +1,6 @@
 #NOTES
 
-
+# Still stuck with bug. Will return to fixing upon end of break.
 
 
 # =========
