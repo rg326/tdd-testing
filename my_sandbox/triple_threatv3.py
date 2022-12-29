@@ -1,7 +1,7 @@
-#NOTES
+# NOTES
 
 # Still stuck with bug. Will return to fixing upon end of break.
-# Start with continuing to refactor the code from previous version
+# Start with continuing to refactor the code from previous version.
 
 # =========
 
