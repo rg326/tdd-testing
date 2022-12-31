@@ -132,7 +132,7 @@ def start_game():
             print("Game Over")
             return None
 
-#--------------------------
+#---------------------Iterates through each player's hand once------
 def play_turn():
 	global hand
 	global my_score
