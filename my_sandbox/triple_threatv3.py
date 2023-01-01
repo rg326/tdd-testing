@@ -177,4 +177,5 @@ def play_turn():
 	#christmas eve
 	#christmas day
 	#holiday break
+	#new years eve
 	#==============
