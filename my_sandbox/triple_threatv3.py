@@ -170,13 +170,13 @@ def play_turn():
 	# print(comp_turn_3)
 
 	#==============
-	#holiday break
-	#holiday break
-	#holiday break
-	#holiday break
-	#christmas eve
-	#christmas day
-	#holiday break
-	#new years eve - happy new years!
-	#new years day
+	# holiday break
+	# holiday break
+	# holiday break
+	# holiday break
+	# christmas eve
+	# christmas day
+	# holiday break
+	# new years eve - happy new years!
+	# new years day
 	#==============
