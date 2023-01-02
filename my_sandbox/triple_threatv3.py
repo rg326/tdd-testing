@@ -178,4 +178,5 @@ def play_turn():
 	#christmas day
 	#holiday break
 	#new years eve - happy new years!
+	#new years day
 	#==============
