@@ -5,6 +5,7 @@
 #Check out tutorial for deepcopy
 #Fix the population bug for 2023
 #Could possibly be fixed by switching to OOP instead of procedural
+#will need some time to do so
 # =========
 
 # Import modules
