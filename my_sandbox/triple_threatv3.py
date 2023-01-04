@@ -8,6 +8,7 @@
 #will need some time to do so
 #check youtube
 #first, complete procedural (spaghetti) code
+#look up various ways of copying data in python
 # =========
 
 # Import modules
