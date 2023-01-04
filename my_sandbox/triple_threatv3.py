@@ -7,6 +7,7 @@
 #Could possibly be fixed by switching to OOP instead of procedural
 #will need some time to do so
 #check youtube
+#first, complete procedural (spaghetti) code
 # =========
 
 # Import modules
