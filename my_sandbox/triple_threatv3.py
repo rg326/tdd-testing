@@ -9,6 +9,7 @@
 #check youtube
 #first, complete procedural (spaghetti) code
 #look up various ways of copying data in python
+# intended to use deep copy but still doesn't work
 # =========
 
 # Import modules
