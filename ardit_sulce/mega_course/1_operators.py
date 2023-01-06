@@ -1,2 +1,23 @@
-# Math Operators
-# Python written in C language
+# 演算
+# パイソンはC言語でできた
+
+#足し算
+print(3＋4）
+
+#引き算
+print(3-4）
+
+#掛け算
+print(3※4）
+
+#割り算
+print(3/4）
+
+#フロア分割
+print(9//2)
+
+#モジュロ｜係数
+print(9％2)
+
+#指数
+print(3**4)
