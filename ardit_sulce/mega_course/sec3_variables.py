@@ -18,3 +18,5 @@ print(total_price)
 
 # TIP - print multiple variables with a comma
 print(total_price, items, price)
+
+# exit() <- takes you out of the python interactive shell
