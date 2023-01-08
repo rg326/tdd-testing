@@ -15,3 +15,6 @@ price = 2
 total_price = items * price
 
 print(total_price)
+
+# TIP - print multiple variables with a comma
+print(total_price, items, price)
