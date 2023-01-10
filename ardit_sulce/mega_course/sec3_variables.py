@@ -37,3 +37,8 @@ print(type(x), type(y), type(z))
 #====
 
 student_grades = [9.1, 8.8, 7.5]
+student_grades = [9, "Hello", [1, 2, 3, 4]]
+
+
+print(student_grades * 2)
+
