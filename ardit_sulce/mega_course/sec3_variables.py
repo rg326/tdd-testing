@@ -42,6 +42,6 @@ student_grades = [9, "Hello", [1, 2, 3, 4]]
 
 print(student_grades * 2)
 
-grades = list(range(0, 11))
+student_grades = list(range(0, 11))
 
-print(grades)
+print(student_grades)
