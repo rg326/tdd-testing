@@ -45,3 +45,4 @@ print(student_grades * 2)
 student_grades = list(range(0, 11))
 
 print(student_grades)
+#//will list range between 0-10 (exclusive)
