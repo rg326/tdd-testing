@@ -12,3 +12,6 @@ mysum = sum(student_grades)
 length = len(student_grades)
 mean = mysum / length
 print(mean)
+
+greeting_2 = "ELLO CHEERIO"
+str.lower(greeting_2)
