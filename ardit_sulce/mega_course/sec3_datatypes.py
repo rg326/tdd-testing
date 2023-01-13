@@ -15,3 +15,4 @@ print(mean)
 
 greeting_2 = "ELLO CHEERIO"
 str.lower(greeting_2)
+#// "ello cheerio"
