@@ -48,3 +48,4 @@ print(student_grades)
 #//will list range between 0-10 (exclusive)
 
 #use dir. to get more methods
+#use help in repl for more
