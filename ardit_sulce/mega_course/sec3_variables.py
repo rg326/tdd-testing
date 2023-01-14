@@ -46,3 +46,5 @@ student_grades = list(range(0, 11))
 
 print(student_grades)
 #//will list range between 0-10 (exclusive)
+
+#use dir. to get more methods
