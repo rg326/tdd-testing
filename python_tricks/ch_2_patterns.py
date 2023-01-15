@@ -1,7 +1,13 @@
 #Assertions
 # Use assertions to help automatically detect errors in python
 
+#Example 1
 def apply_discount(product, discount):
 price = int(product['price'] * (1.0 - discount)) assert 0 <= price <= product['price']
 return price
 >>> shoes = {'name': 'Fancy Shoes', 'price': 14900}
+
+#Example 2
+>>> apply_discount(shoes, 2.0) Traceback (most recent call last):
+File "<input>", line 1, in <module> apply_discount(prod, 2.0)
+File "<input>", line 4, in apply_discount assert 0 <= price <= product['price']
