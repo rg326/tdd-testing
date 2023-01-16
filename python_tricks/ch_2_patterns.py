@@ -13,3 +13,7 @@ File "<input>", line 1, in <module> apply_discount(prod, 2.0)
 File "<input>", line 4, in apply_discount assert 0 <= price <= product['price']
 
 #As you can see, when we try to apply this invalid discount, our program halts with an AssertionError. This happens because a discount of 200% violated the assertion condition we placed in the apply_discount function.
+
+#Assert syntax
+assert_stmt ::= "assert" expression1 ["," expression2]
+
