@@ -17,3 +17,8 @@ File "<input>", line 4, in apply_discount assert 0 <= price <= product['price']
 #Assert syntax
 assert_stmt ::= "assert" expression1 ["," expression2]
 
+#In this case, expression1 is the condition we test, and the optional expression2 is an error message that’s displayed if the assertion fails. At execution time, the Python interpreter transforms each assert state- ment into roughly the following sequence of statements:
+
+if __debug__:
+    if not expression1:
+        raise AssertionError(expression2)
