@@ -26,5 +26,16 @@ if __debug__:
 ''' Two interesting things about this code snippet:
 Before the assert condition is checked, there’s an additional check for the __debug__ global variable. It’s a built-in boolean flag that’s true under normal circumstances and false if optimizations are requested. We’ll talk some more about later that in the “common pitfalls” section.
 Also, you can use expression2 to pass an optional error message that will be displayed with the AssertionError in the traceback. This can simplify debugging even further. For example, I’ve seen code like this: '''
+if cond == 'x': 
+... do_x()
 
+    ... elif cond == 'y': ... do_y()
+... else:
+...
+...
+...
+...
+...
+assert False, (
+'This should never happen, but it does ' 'occasionally. We are currently trying to ' 'figure out why. Email dbader if you ' 'encounter this in the wild. Thanks!')
 
