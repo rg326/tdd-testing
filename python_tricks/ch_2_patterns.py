@@ -22,3 +22,9 @@ assert_stmt ::= "assert" expression1 ["," expression2]
 if __debug__:
     if not expression1:
         raise AssertionError(expression2)
+
+''' Two interesting things about this code snippet:
+Before the assert condition is checked, there’s an additional check for the __debug__ global variable. It’s a built-in boolean flag that’s true under normal circumstances and false if optimizations are requested. We’ll talk some more about later that in the “common pitfalls” section.
+Also, you can use expression2 to pass an optional error message that will be displayed with the AssertionError in the traceback. This can simplify debugging even further. For example, I’ve seen code like this: '''
+
+
