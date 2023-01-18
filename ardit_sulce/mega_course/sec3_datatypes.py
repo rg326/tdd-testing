@@ -20,3 +20,8 @@ str.lower(greeting_2)
 #Dictionaries
 monday_temperatures = [9.1, 8.8, 7.5]
 student_grades = ["Marry": 9.1, "Sim": 8.8, "John": 7.5]
+
+#Tuples
+# Tuples are immutable while lists are mutable
+monday_temperatures = (1, 4, 5)
+#syntactically, tuples use parenthesis instead of brackets like lists
