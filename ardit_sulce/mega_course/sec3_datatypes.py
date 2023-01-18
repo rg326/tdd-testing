@@ -16,3 +16,7 @@ print(mean)
 greeting_2 = "ELLO CHEERIO"
 str.lower(greeting_2)
 #// "ello cheerio"
+
+#Dictionaries
+monday_temperatures = [9.1, 8.8, 7.5]
+student_grades = ["Marry": 9.1, "Sim": 8.8, "John": 7.5]
