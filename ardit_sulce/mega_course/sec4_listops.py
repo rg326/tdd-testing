@@ -25,3 +25,15 @@ monday_temps.clear()
 monday_temps.__getitem__(1)
 # Alt
 monday_temps[1]
+
+len(monday_temps)
+
+# Item Slices
+monday_temps[1:4]
+
+# This will give you items # - # (upper limit exclusive)
+
+# Access last item on the list
+monday_temps[3:5]
+# More intuitive
+monday_temps[3:]
