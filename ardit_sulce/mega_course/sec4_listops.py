@@ -1,3 +1,5 @@
+# List Operations and Atrributes
+
 monday_temps = [9.1, 8.8, 7.5]
 
 #Append - Append object to the end of the list (push)
@@ -18,3 +20,8 @@ monday_temps.index(8.8)
 monday_temps.clear()
 
 #clear(self, /)
+
+# Get item with index #
+monday_temps.__getitem__(1)
+# Alt
+monday_temps[1]
