@@ -33,7 +33,7 @@ monday_temps[1:4]
 
 # This will give you items # - # (upper limit exclusive)
 
-# Access last item on the list
+# Access last item on the list, since there are only 4 items in the list
 monday_temps[3:5]
 
 # More intuitive
