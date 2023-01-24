@@ -35,5 +35,6 @@ monday_temps[1:4]
 
 # Access last item on the list
 monday_temps[3:5]
+
 # More intuitive
 monday_temps[3:]
