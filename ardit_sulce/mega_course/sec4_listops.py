@@ -36,5 +36,5 @@ monday_temps[1:4]
 # Access last item on the list, since there are only 4 items in the list
 monday_temps[3:5]
 
-# More intuitive
+# More intuitive, still has same result
 monday_temps[3:]
