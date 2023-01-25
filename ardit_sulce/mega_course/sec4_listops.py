@@ -38,3 +38,5 @@ monday_temps[3:5]
 
 # More intuitive, still has same result
 monday_temps[3:]
+
+monday_temps[:4]
