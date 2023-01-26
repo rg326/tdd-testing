@@ -40,3 +40,8 @@ monday_temps[3:5]
 monday_temps[3:]
 
 monday_temps[:4]
+
+# Neg Indexing
+monday_temps[-1]
+
+##access last item in list
