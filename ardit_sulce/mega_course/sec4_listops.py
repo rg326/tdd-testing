@@ -45,3 +45,13 @@ monday_temps[:4]
 monday_temps[-1]
 
 ##access last item in list
+
+# list slicing using neg indexing
+monday_temps[-2:]
+
+monday_temps[-4,-2]
+
+#start from beginning of list
+monday_temps[-5,-2]
+
+monday_temps[-5,-1]
