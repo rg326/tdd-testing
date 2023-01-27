@@ -1,4 +1,4 @@
-# List Operations and Atrributes
+x# List Operations and Atrributes
 
 monday_temps = [9.1, 8.8, 7.5]
 
@@ -56,6 +56,7 @@ monday_temps[-5,-2]
 
 monday_temps[-5,-1]
 
+#Chain Indexing
 monday_temps = [0]
 monday_temps = [0][2]
 
@@ -63,4 +64,6 @@ monday_temps = [0][2]
 myString = 'hello'
 myString[1]
 myString[-1]
+
+#String slicing also works the same way
 myString[:3]
