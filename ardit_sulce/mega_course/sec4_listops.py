@@ -55,3 +55,12 @@ monday_temps[-4,-2]
 monday_temps[-5,-2]
 
 monday_temps[-5,-1]
+
+monday_temps = [0]
+monday_temps = [0][2]
+
+# Strings act the same way as lists
+myString = 'hello'
+myString[1]
+myString[-1]
+myString[:3]
