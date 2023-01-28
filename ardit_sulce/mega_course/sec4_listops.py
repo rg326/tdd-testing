@@ -68,6 +68,7 @@ myString[-1]
 #String slicing also works the same way
 myString[:3]
 
+#exercise 1
 letters = ['a', 'b', 'c', 'd']
 print(letters[:2])
 
