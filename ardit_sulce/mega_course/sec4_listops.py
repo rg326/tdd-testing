@@ -70,3 +70,5 @@ myString[:3]
 
 letters = ['a', 'b', 'c', 'd']
 print(letters[:2])
+
+print(letters[2:])
