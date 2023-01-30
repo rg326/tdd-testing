@@ -76,4 +76,4 @@ print(letters[:2])
 #exercise 2
 print(letters[2:])
 
-letters = ['h', 'e', 'l', 'l', 'o']
+letter = ['h', 'e', 'l', 'l', 'o']
