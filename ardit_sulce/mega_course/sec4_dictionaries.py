@@ -7,3 +7,6 @@ search_engines_users = {"google": 1000000000, "bing": 127000000, "duck duck go":
 #Let's go!
 
 student_grades = {"Marry": 9.1, "Sim": 8.8, "John": 7.5}
+
+eng_port = {"rain": "chuva", "sun": "sol"}
+eng_port["sun"]
