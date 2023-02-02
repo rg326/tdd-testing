@@ -11,3 +11,4 @@ student_grades = {"Marry": 9.1, "Sim": 8.8, "John": 7.5}
 #Access dictionary
 eng_port = {"rain": "chuva", "sun": "sol"}
 eng_port["sun"]
+# The key becomes the index
