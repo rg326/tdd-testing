@@ -22,3 +22,4 @@ cool_string = str.join("", cool_list)
 cool_string
 'Hello'
 
+#As can be seen above, converting a list into a string is more complex. Here str() is not sufficient. We need str.join(). Try running the code above again, but this time using str.join("___", cool_list) in the second line. You will understand how str.join(works).
