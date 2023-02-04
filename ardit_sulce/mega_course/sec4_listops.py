@@ -1,6 +1,7 @@
-x# List Operations and Atrributes
+# List Operations and Atrributes
 
-monday_temps = [9.1, 8.8, 7.5]
+#monday_temps = [9.1, 8.8, 7.5]
+monday_temps = [9, 8, 7, 4, 5]
 
 #Append - Append object to the end of the list (push)
 
@@ -23,6 +24,7 @@ monday_temps.clear()
 
 # Get item with index #
 monday_temps.__getitem__(1)
+
 # Alt
 monday_temps[1]
 
