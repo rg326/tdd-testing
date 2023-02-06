@@ -13,3 +13,7 @@ def mean(mylist):
     return output
 
 print(convert(10))
+
+def find_sqarea(num):
+  sq = num ** 2
+  return sq
