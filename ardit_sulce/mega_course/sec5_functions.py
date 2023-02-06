@@ -17,3 +17,7 @@ print(convert(10))
 def find_sqarea(num):
   sq = num ** 2
   return sq
+
+def volconvert(amount):
+  new_vol = amount * 29.57353
+  return new_vol
