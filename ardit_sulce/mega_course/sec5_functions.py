@@ -14,10 +14,12 @@ def mean(mylist):
 
 print(convert(10))
 
+#Func Exercise 1
 def find_sqarea(num):
   sq = num ** 2
   return sq
 
+#Func Evercise 2
 def volconvert(amount):
   new_vol = amount * 29.57353
   return new_vol
