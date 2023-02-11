@@ -15,7 +15,7 @@ if x == 1 and y == 1:
 else:
     print("No")
 
-# This will return Yes since x == 1 and y == 1 are both True
+# This will return "Yes", since x == 1 and y == 1 are both True
 
 # You can also check if one or two conditions are met using an or operator
 
