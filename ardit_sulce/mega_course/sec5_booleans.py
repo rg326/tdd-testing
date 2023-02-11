@@ -6,7 +6,7 @@ if x == 1:
 else:
     print("No")
 
-# You can check if two conditions ar met at the same time using an and operator
+# You can check if two conditions are met at the same time using an and operator
 x = 1
 y = 1
 
