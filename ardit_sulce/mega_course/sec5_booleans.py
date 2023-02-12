@@ -31,3 +31,11 @@ else:
 
 #For github: push 1 Feb 9, 2023
 #For github: push 2 Feb 9, 2023
+
+# Ex Warm or Cold:
+
+def worc(temp):
+    if temp > 7:
+        return "Warm"
+    else:
+        return "Cold"
