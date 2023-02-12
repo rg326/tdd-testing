@@ -39,3 +39,11 @@ def worc(temp):
         return "Warm"
     else:
         return "Cold"
+
+# Ex Password Controller:
+
+def pass_controller(str):
+    if len(str) >= 8:
+        return True
+    else:
+        return False
