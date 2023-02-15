@@ -21,3 +21,4 @@ if 3 > 1:
 print('cc')
 print('ccc')
 
+# Ultimately, the code will still work, but these conventions make it much more readable
