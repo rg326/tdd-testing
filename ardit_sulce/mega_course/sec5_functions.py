@@ -15,9 +15,9 @@ def mean(mylist):
 print(convert(10))
 
 #Func Exercise 1
-def find_sqarea(num):
-  sq = num ** 2
-  return sq
+def find_square(num):
+  sq_area = num ** 2
+  return sq_area
 
 #Func Evercise 2
 def volconvert(amount):
