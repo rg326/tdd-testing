@@ -55,5 +55,5 @@ def temp_change(temp):
         return "Hot"
     elif temp >= 15 and temp <= 25:
         return "Warm"
-    elif temp < 15:
+    elif temp < 15: #Alt: just using else is fine as well
         return "Cold"
