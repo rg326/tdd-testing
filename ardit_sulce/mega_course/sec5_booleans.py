@@ -47,3 +47,13 @@ def pass_controller(str):
         return True
     else:
         return False
+
+# Ex Hot, Warm, Cold
+
+def temp_change(temp):
+    if temp > 25:
+        return "Hot"
+    elif temp >= 15 and temp <= 25:
+        return "Warm"
+    elif temp < 15:
+        return "Cold"
