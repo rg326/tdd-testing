@@ -7,3 +7,8 @@ print(message)
 
 #Multiple strings/variable inputs for Python 2.3
 message = "Hello %s" % (name, surname)
+
+#Python 3
+when = "today"
+message = f"Hello {name}{surname}. What's up {when}"
+print(message)
