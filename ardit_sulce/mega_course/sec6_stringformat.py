@@ -17,3 +17,7 @@ print(message)
 # Exercise Formatting Strings
 def greet(name):
     return f"Hi {name}"
+
+# Formatting and Uppercase
+def upper(name):
+    return f"Hi {name.title()"
