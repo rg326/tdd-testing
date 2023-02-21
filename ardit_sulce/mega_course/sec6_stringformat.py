@@ -13,3 +13,7 @@ when = "today"
 message = f"Hello {name}{surname}. What's up {when}?"
 print(message)
 # //Hello Name, Surname. What's up today?
+
+# Exercise Formatting Strings
+def greet(name):
+    return f"Hi {name}"
