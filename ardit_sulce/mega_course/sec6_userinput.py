@@ -7,4 +7,7 @@ def weather_condition(temp):
 user_input = int(input("Enter some input:"))
 
 print(type(user_input), user_input)
-    
+
+ #Final Notes
+ # In this section you learned that:
+ #    
