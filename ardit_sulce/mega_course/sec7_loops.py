@@ -20,3 +20,16 @@ for color in colors:
 for color in colors:
     if color > 50:
         print(color)
+
+
+# Exercise - Loop Over Integer Colors
+colors = [11, 34.1, 98.2, 43, 45.1, 54 ,54]
+
+for color in colors:
+    if color % 1 == 0:
+        print(color)
+
+# Alt
+for color in colors:
+    if isinstance(color, int):
+        print(color)
