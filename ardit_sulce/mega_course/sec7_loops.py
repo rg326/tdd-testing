@@ -46,3 +46,17 @@ def cels_to_kel:
 
 for temp in [9.1, 8.8, -270.15]:
     print(cels_to_kel(temp))
+
+'''
+The output of that would be:
+
+282.25
+281.95
+3.0
+
+So, in the first iteration
+cels_to_kel(9.1) was executed, in the second
+cels_to_kel(8.8) and the third
+cels_to_kel(-270.15)
+
+'''
