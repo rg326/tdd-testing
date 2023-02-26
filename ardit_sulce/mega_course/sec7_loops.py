@@ -39,3 +39,10 @@ colors = [11, 34.1, 98.2, 43, 45.1, 54, 54]
 for color in colors:
     if isinstance(color, int) and color > 50:
         print(color) 
+
+# For Loop Over a Function
+def cels_to_kel:
+    return cels + 273.15
+
+for temp in [9.1, 8.8, -270.15]:
+    print(cels_to_kel(temp))
