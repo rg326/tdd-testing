@@ -62,3 +62,11 @@ cels_to_kel(-270.15)
 '''
 
 # Looping over a dictionary
+student_grades = {"Marry": 9.1, "Sim": 8.8, "John": 7.5}
+
+for grades in student_grades.item():
+    print(grades)
+
+#for grades in student_grades.keys() # keys
+
+#for grades in student_grades.values() #values
