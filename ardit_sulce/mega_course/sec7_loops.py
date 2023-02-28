@@ -70,3 +70,10 @@ for grades in student_grades.item():
 #for grades in student_grades.keys() # keys
 
 #for grades in student_grades.values() #values
+
+
+# Example 1 - Phone
+phone_numbers = {"John": "+37682929928", "Marry": "+423998200919"}
+     
+    for pair in phone_numbers.items():
+        print(f"{pair[0]} has as phone number {pair[1]}")
