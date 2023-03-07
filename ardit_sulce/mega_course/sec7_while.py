@@ -6,3 +6,4 @@ while a > 0:
     a += 1
 
 # Will loop indefinitely unless incremented
+# ex: a += 1
