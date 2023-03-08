@@ -7,3 +7,9 @@ while a > 0:
 
 # Will loop indefinitely unless incremented
 # ex: a += 1
+
+# while loop with user input
+
+while username != "pypy":
+    username = input("Enter Username")
+
