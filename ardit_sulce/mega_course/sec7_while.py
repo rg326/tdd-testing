@@ -9,7 +9,8 @@ while a > 0:
 # ex: a += 1
 
 # while loop with user input
+username = " "
 
 while username != "pypy":
-    username = input("Enter Username")
+    username = input("Enter Username: ")
 
