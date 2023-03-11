@@ -32,3 +32,4 @@ while True:
 
 
 # datetime.datetime.now() - gets the current time
+# year, month, day order
