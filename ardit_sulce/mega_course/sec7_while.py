@@ -29,3 +29,6 @@ while True:
         print("It's not yet 19:30:20 of 2090.8.20")
 
 #The loop above will print out the string inside print() over and over again until the 20th of August, 2090.
+
+
+# datetime.datetime.now() - gets the current time
