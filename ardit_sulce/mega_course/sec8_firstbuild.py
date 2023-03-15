@@ -30,5 +30,6 @@ while True:
     else:
         result.append(sentence_maker(user_input))
 
-print(results)
-    
+print(" ".join(results))
+
+# Use Join Method to concatenate
