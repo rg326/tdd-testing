@@ -24,3 +24,7 @@ print(new_temps)
 # Ex - Only Numbers
 def foo(lst):
     return [i for i in lst if  isinstance(i, int)]
+
+# Ex - Only Positive Numbers
+def foo(lst):
+    return [i for i in lst if i > 0 ]
