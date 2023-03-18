@@ -36,3 +36,7 @@ temps = [221, 234, 340, -9999, 230]
 new_temps = [temp / 10 if temp != -9999 else 0 for temp in temps]
 
 print[new_temps]
+
+# Ex - Zeroes Instead
+def foo(lst):
+    return [i if not isinstance(i, str) else 0 for i in lst ]
