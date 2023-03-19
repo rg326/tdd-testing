@@ -1,4 +1,6 @@
-#Intro to List Comprehensions
+# Intro to List Comprehensions
+# A list comprehension is an expression that creates a list by iterating over another container.
+
 temps = [221, 234, 340, 230]
 
 # Not using decimals/floats saves space on servers
