@@ -40,3 +40,7 @@ print[new_temps]
 # Ex - Zeroes Instead
 def foo(lst):
     return [i if not isinstance(i, str) else 0 for i in lst ]
+
+# Ex - Convert and Sum Up
+def foo(list):
+    return sum([float(i) for i in list])
