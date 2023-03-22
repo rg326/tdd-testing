@@ -46,3 +46,5 @@ def foo(lst):
 # Ex - Convert and Sum Up
 def foo(list):
     return sum([float(i) for i in list])
+
+# break - family emergency
