@@ -9,3 +9,4 @@ print(area(a=5, b=7)):
 print(area(5, 7))
 
 # Remember, a default param CANNOT come before a non-default param)
+
