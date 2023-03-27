@@ -17,5 +17,9 @@ def mean(*args):
 print(mean(1,3,4))
 #you get a tuple that contains all the args in the parameter
 
+# Ex - Average function
+def foo(*args):
+    return sun(args) / len(args)
+
 
 
