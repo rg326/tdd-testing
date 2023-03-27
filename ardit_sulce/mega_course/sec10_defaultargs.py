@@ -21,5 +21,10 @@ print(mean(1,3,4))
 def foo(*args):
     return sun(args) / len(args)
 
+# Ex - Indefinite Number of Strings Processed
+def foo(*args):
+    args = [x.upper() for x in args]
+    return sorted(args)
+
 
 
