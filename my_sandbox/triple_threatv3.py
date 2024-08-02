@@ -174,15 +174,3 @@ def play_turn():
 		comp_hand += card_deck[x] 
 	# print(comp_turn_2)
 	# print(comp_turn_3)
-
-	#==============
-	# holiday break
-	# holiday break
-	# holiday break
-	# holiday break
-	# christmas eve
-	# christmas day
-	# holiday break
-	# new years eve - happy new years!
-	# new years day
-	#==============
